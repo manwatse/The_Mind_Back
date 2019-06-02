@@ -1,7 +1,0 @@
-organization=manwatse-github
-projectKey=manwatse_The_Mind_Back
-serverUrl=https://sonarcloud.io
-serverVersion=7.8.0.25269
-dashboardUrl=https://sonarcloud.io/dashboard?id=manwatse_The_Mind_Back
-ceTaskId=AWsYNX92OPzm62I_tXhB
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWsYNX92OPzm62I_tXhB
