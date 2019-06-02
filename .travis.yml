@@ -1,0 +1,30 @@
+language: java
+
+sudo: false
+install: mvn install
+dist: trusty
+
+addons:
+  sonarcloud:
+    organization: "manwatse-github" # the key of the org you chose at step #3
+    token:
+      secure: 6b2e0975b2d06a9bed15121e5b684292a03f77c4 # encrypted value of your token
+
+
+jdk:
+  -oraclejdk11
+
+before_install:
+- wget https://github.com/sormuras/bach/raw/master/install-jdk.sh
+
+matrix:
+  include:
+  - env: JDK='Oracle JDK 11'
+  - install: . ./install-jdk.sh -F 11 -L BCL
+
+script:
+- mvn test -B
+- echo PATH = ${PATH}
+- echo JAVA_HOME = ${JAVA_HOME}
+- java -version
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
