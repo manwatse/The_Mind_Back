@@ -110,6 +110,14 @@
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.6.0.1398</version>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
