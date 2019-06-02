@@ -8,7 +8,7 @@ addons:
   sonarcloud:
     organization: "manwatse-github" # the key of the org you chose at step #3
     token:
-      secure: 6b2e0975b2d06a9bed15121e5b684292a03f77c4 # encrypted value of your token
+      secure: 0190ca1e73da0c00008798c83fe9f72780957c85 # encrypted value of your token
 
 
 jdk:
