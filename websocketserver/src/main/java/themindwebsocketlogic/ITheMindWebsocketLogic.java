@@ -1,11 +1,13 @@
-package TheMindWebsocketLogic;
+package themindwebsocketlogic;
 
-import TheMindWebsocketEvent.ITheMindEvent;
-import TheMindWebsocketGameLogic.ITheMindWebsocketGameLogic;
+import themindwebsocketevent.ITheMindEvent;
+import themindwebsocketgamelogic.ITheMindWebsocketGameLogic;
 
 public interface ITheMindWebsocketLogic {
 
     void setEventSockets(ITheMindEvent eventSockets);
+
+    void PlayerReady(String playerId,String sessionId);
 
     void CreateGame(String gametype, String userId, String sessionId);
 
@@ -22,4 +24,5 @@ public interface ITheMindWebsocketLogic {
     void UploadScores(String name, int score, String gameType);
 
     void UpdatePlayerScore(int player, int score, String sessionId);
+
 }

@@ -1,4 +1,4 @@
-package TheMindWebsocketGameLogic;
+package themindwebsocketgamelogic;
 
 public class TheMindWebsocketGameLogic {
 }

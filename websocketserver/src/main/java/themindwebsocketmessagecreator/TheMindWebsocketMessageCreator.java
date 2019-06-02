@@ -1,6 +1,6 @@
-package TheMIndWebsocketMessageCreator;
+package themindwebsocketmessagecreator;
 
-import TheMindWebsocketEvent.ITheMindEvent;
+import themindwebsocketevent.ITheMindEvent;
 import com.google.gson.Gson;
 import shared.EncapsulatingMessage;
 
@@ -12,7 +12,7 @@ public class TheMindWebsocketMessageCreator implements  ITheMindWebsocketMessage
     }
 
     @Override
-    public void MessageCreator(String action, String object, String sessionId) {
+    public void MessageCreator(String action, Object object, String sessionId) {
         Gson gson = new Gson();
         event.sendMessage(gson.toJson(new EncapsulatingMessage(action, object)), sessionId);
     }

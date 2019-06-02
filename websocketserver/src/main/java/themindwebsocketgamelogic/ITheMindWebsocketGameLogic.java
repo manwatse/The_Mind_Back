@@ -1,4 +1,4 @@
-package TheMindWebsocketGameLogic;
+package themindwebsocketgamelogic;
 
 import models.Player;
 

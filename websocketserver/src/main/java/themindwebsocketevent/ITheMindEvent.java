@@ -1,4 +1,4 @@
-package TheMindWebsocketEvent;
+package themindwebsocketevent;
 
 import javax.websocket.CloseReason;
 import javax.websocket.Session;

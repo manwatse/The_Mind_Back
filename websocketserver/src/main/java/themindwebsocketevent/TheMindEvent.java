@@ -1,7 +1,7 @@
-package TheMindWebsocketEvent;
+package themindwebsocketevent;
 
-import TheMindWebsocketLogic.ITheMindWebsocketLogic;
-import TheMindWebsocketMessageProcessor.ITheMindWebsocketMessageProcessor;
+import themindwebsocketlogic.ITheMindWebsocketLogic;
+import themindwebsocketmessageprocessor.ITheMindWebsocketMessageProcessor;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.HashSet;
 
 @ServerEndpoint(value = "/TheMind/")
+
 public class TheMindEvent {
     ITheMindWebsocketMessageProcessor messageProcessor;
     ITheMindWebsocketLogic logic;
