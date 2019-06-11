@@ -2,30 +2,36 @@ package themindwebsocketgamelogic;
 
 import models.Player;
 
+import java.util.ArrayList;
+
 public interface ITheMindWebsocketGameLogic {
 
+    void join(Player player);
 
     void StartGame();
 
+    void nextLevel();
+
+    void dealCards();
+
+    void leave(String sessionId);
+
+    void endGame();
 
     //todo  card played
-    void Cardplayed();
+    void Cardplayed( int card);
 
-    void AddPlayer(Player player2);
-
-    boolean checkSessionID(String sessionID);
 
     int getGameId();
 
-    String getPlayer1Name();
+    void vote();
 
-    String getPlayer2Name();
+    Boolean checkCards();
 
-    String getPlayer1SessionID();
+    ArrayList<Player> getPlayers();
 
-    boolean checkAvailability();
+    void resetDeck();
 
-    Player getPlayer2();
+    void removeLastCardFromPlayers(ArrayList<Player> players);
 
-    Player[][] getField();
 }

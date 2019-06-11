@@ -3,9 +3,9 @@ package shared;
 public class EncapsulatingMessage {
 
     String message;
-    String object;
+    Object object;
 
-    public EncapsulatingMessage(String message, String object) {
+    public EncapsulatingMessage(String message, Object object) {
         this.message = message;
         this.object = object;
     }
@@ -14,7 +14,7 @@ public class EncapsulatingMessage {
         return message;
     }
 
-    public String getObject() {
+    public Object getObject() {
         return object;
     }
 }

@@ -1,16 +1,3 @@
-import TheMindWebsocketEvent.ITheMindEvent;
-import TheMindWebsocketEvent.TheMindEvent;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.servlet.ServletContextHandler;
-import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
-import org.graalvm.compiler.phases.common.NodeCounterPhase;
-
-import javax.websocket.server.ServerContainer;
-import javax.websocket.server.ServerEndpoint;
-import javax.websocket.server.ServerEndpointConfig;
-
-
 public class TheMindWebsocketMain  {
     private static final  int PORT = 8099;
 
