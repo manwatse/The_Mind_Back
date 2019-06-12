@@ -14,7 +14,7 @@ public class ReadyHandler {
     public void PlayerReady(String data,String sessionId){
         Gson gson = new Gson();
         PlayerReady playerReady= gson.fromJson(data,PlayerReady.class);
-        logic.PlayerReady(sessionId);
+        logic.PlayerReady(playerReady.getPlayerId(),sessionId);
 
     }
 }

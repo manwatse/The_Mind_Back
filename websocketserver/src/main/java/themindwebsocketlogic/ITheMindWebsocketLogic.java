@@ -7,7 +7,7 @@ public interface ITheMindWebsocketLogic {
 
     void setEventSockets(ITheMindEvent eventSockets);
 
-    void PlayerReady(String sessionId);
+    void PlayerReady(String playerId ,String sessionId);
 
     void CreateGame(String gametype, String userId, String sessionId);
 
