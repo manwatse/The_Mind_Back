@@ -27,6 +27,8 @@ public interface ITheMindWebsocketGameLogic {
 
     void removeLastCardFromPlayers(ArrayList<Player> players);
 
+    void removePlayer(String sessionId);
+
     int getGameId();
 
     ArrayList<Player> getPlayers();

@@ -181,4 +181,13 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
         }
 
     }
+
+    @Override
+    public void removePlayer(String sessionId) {
+        for (Player p: players) {
+            if (p.getSessionId()==sessionId){
+                players.remove(p);
+            }
+        }
+    }
 }

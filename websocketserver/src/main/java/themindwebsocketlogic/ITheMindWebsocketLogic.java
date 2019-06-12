@@ -19,6 +19,8 @@ public interface ITheMindWebsocketLogic {
 
     void RemoveGame(int gameId);
 
+    void RemovePlayer(String sessionid);
+
     ITheMindWebsocketGameLogic getGame(int gameId);
 
     void UpdatePlayerScore(String playerid, int score, String sessionId);

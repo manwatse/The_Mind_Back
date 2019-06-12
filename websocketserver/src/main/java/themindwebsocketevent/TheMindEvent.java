@@ -35,7 +35,7 @@ public class TheMindEvent {
     public void onClose(javax.websocket.CloseReason reason, Session session) {
         System.out.println("[Session ID] : " + session.getId() + "[Socket Closed: " + reason);
         try {
-            logic.RemoveGame(logic.getGame(session.getId()));
+            logic.RemovePlayer(session.getId());
         } catch (Exception e) {
             System.out.println(e);
         }

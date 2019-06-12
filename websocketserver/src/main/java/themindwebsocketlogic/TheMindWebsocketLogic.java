@@ -85,12 +85,20 @@ public class TheMindWebsocketLogic implements  ITheMindWebsocketLogic {
 
     @Override
     public void RemoveGame(int gameId) {
+
         for (TheMindWebsocketGameLogic g : games) {
             if (gameId==g.getGameId()){
                 games.remove(g);
             }
         }
 
+    }
+
+    @Override
+    public void RemovePlayer(String sessionid) {
+        for (TheMindWebsocketGameLogic g:games) {
+            g.removePlayer(sessionid);
+        }
     }
 
     @Override
