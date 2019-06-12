@@ -7,15 +7,15 @@ import java.util.Comparator;
 
 public class Player {
 
-    int id;
+    String id;
     String sessionId;
-    int playerid;
+    String playerid;
     ArrayList<Integer> cards;
     Comparator c = Collections.reverseOrder();
 
 
-    public Player(String sessionId, int playerid){
-        this.playerid=playerid;
+    public Player(String sessionId, String id){
+        this.id=id;
         this.sessionId=sessionId;
     }
 
@@ -38,7 +38,7 @@ public class Player {
         cards.get(cards.size()-1);
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -46,7 +46,7 @@ public class Player {
         return sessionId;
     }
 
-    public int getPlayerid() {
+    public String getPlayerid() {
         return playerid;
     }
 

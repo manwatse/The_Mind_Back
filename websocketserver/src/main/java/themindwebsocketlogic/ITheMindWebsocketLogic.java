@@ -7,22 +7,23 @@ public interface ITheMindWebsocketLogic {
 
     void setEventSockets(ITheMindEvent eventSockets);
 
-    void PlayerReady(String playerId ,String sessionId);
+    void PlayerReady(String id ,String sessionId);
 
-    void CreateGame(String gametype, String userId, String sessionId);
+    void CreateGame(int gameId);
 
-    void JoinGame(int gameId, String userId, String sessionId);
+    void JoinGame(String userid, String sessionId);
 
     void EndGameMessage(String sessionID, String winner);
 
     void UpdateGame();
 
-    void RemoveGame(ITheMindWebsocketGameLogic game);
+    void RemoveGame(int gameId);
 
-    ITheMindWebsocketGameLogic getGame(String sessionId);
+    ITheMindWebsocketGameLogic getGame(int gameId);
 
-    void UploadScores(String name, int score, String gameType);
+    void UpdatePlayerScore(String playerid, int score, String sessionId);
 
-    void UpdatePlayerScore(int player, int score, String sessionId);
+
+
 
 }

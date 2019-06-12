@@ -21,17 +21,18 @@ public interface ITheMindWebsocketGameLogic {
     //todo  card played
     void Cardplayed( int card);
 
-
-    int getGameId();
-
     void vote();
-
-    Boolean checkCards();
-
-    ArrayList<Player> getPlayers();
 
     void resetDeck();
 
     void removeLastCardFromPlayers(ArrayList<Player> players);
+
+    int getGameId();
+
+    ArrayList<Player> getPlayers();
+
+    Boolean checkCards();
+
+    Boolean gameStarted();
 
 }

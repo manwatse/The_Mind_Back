@@ -1,7 +1,19 @@
+import com.pusher.rest.Pusher;
+
+import java.util.Collections;
+
 public class TheMindWebsocketMain  {
     private static final  int PORT = 8099;
 
     public static void main(String[] args) {
+
+
+        Pusher pusher = new Pusher("802343", "eb5a7a8b5e5b4cf70382", "9610ed7c66ef938895e4");
+        pusher.setCluster("eu");
+        pusher.setEncrypted(true);
+
+        pusher.trigger("my-channel", "my-event", Collections.singletonMap("message", "hello world"));
+
         //initiate all logic
 
 

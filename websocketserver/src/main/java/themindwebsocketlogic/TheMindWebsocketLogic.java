@@ -1,5 +1,6 @@
 package themindwebsocketlogic;
 
+import models.Player;
 import themindmessagemodelhelper.TheMindMessageModelHelper;
 import themindwebsocketmessagecreator.ITheMindWebsocketMessageCreator;
 import themindwebsocketmessagecreator.TheMindWebsocketMessageCreator;
@@ -34,19 +35,42 @@ public class TheMindWebsocketLogic implements  ITheMindWebsocketLogic {
     }
 
     @Override
-    public void PlayerReady(String playerId,String sessionId) {
+    public void PlayerReady(String id,String sessionId) {
+        if (games.isEmpty())
+        {
+            CreateGame(gameId);
+        }
+        else {
+            JoinGame(id,sessionId);
+
+        }
+
         messageCreator.MessageCreator("ReadyRecieved", TheMindMessageModelHelper.playerReady(),sessionId);
     }
 
     //todo game logic
     @Override
-    public void CreateGame(String gametype, String userId, String sessionId) {
-
+    public void CreateGame(int gameId) {
+        gameId++;
+        TheMindWebsocketGameLogic g = new TheMindWebsocketGameLogic(gameId);
+        games.add(g);
     }
 
     @Override
-    public void JoinGame(int gameId, String userId, String sessionId) {
+    public void JoinGame(String userid, String sessionId) {
+        TheMindWebsocketGameLogic last = games.get(games.size()-1);
 
+        for (TheMindWebsocketGameLogic g:games) {
+            if(g.gameStarted()==false){
+                g.join(new Player(sessionId,userid));
+            }
+            else if(last.gameStarted()){
+                CreateGame(gameId);
+                TheMindWebsocketGameLogic finalLast = games.get(games.size()-1);
+                finalLast.join(new Player(sessionId,userid));
+
+            }
+        }
     }
 
     @Override
@@ -60,23 +84,30 @@ public class TheMindWebsocketLogic implements  ITheMindWebsocketLogic {
     }
 
     @Override
-    public void RemoveGame(ITheMindWebsocketGameLogic game) {
-        games.remove(game);
+    public void RemoveGame(int gameId) {
+        for (TheMindWebsocketGameLogic g : games) {
+            if (gameId==g.getGameId()){
+                games.remove(g);
+            }
+        }
 
     }
 
     @Override
-    public ITheMindWebsocketGameLogic getGame(String sessionId) {
+    public ITheMindWebsocketGameLogic getGame(int gameId) {
+
+        for (TheMindWebsocketGameLogic g : games) {
+            if (gameId==g.getGameId()){
+                return g;
+            }
+        }
         return null;
     }
 
-    @Override
-    public void UploadScores(String name, int score, String gameType) {
 
-    }
 
     @Override
-    public void UpdatePlayerScore(int player, int score, String sessionId) {
+    public void UpdatePlayerScore(String playerId, int score, String sessionId) {
 
     }
 }

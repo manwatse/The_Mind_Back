@@ -10,15 +10,18 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
 
     ArrayList<Player> players;
     ArrayList<Integer> cards;
+
     int votes;
     int lifePoints;
     int gameId;
     int level;
     int lastPlayedCard;
+    Boolean gameStarted=false;
 
-    public  TheMindWebsocketGameLogic(){
+    public  TheMindWebsocketGameLogic(int gameId){
         resetDeck();
         Collections.shuffle(cards);
+        this.gameId=gameId;
     }
 
     @Override
@@ -35,6 +38,7 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
 
     @Override
     public void StartGame() {
+        gameStarted=true;
         level=1;
         dealCards();
     }
@@ -147,6 +151,11 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
             }
         }
         return empty;
+    }
+
+    @Override
+    public Boolean gameStarted() {
+        return gameStarted;
     }
 
     @Override
