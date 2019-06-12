@@ -24,7 +24,7 @@ public class TheMindWebsocketMessageProcessor implements  ITheMindWebsocketMessa
                 break;
             case "PLayerReady":
                 ReadyHandler readyHandler = new ReadyHandler(logic);
-                readyHandler.PlayerReady(messageObject.getObject(),sessionId);
+                readyHandler.PlayerReady(messageObject.getMessage(),sessionId);
                 break;
             case "UpdateGame":
 

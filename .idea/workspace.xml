@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2c8a1e89-a42f-4c2d-b0cf-b869c436a98e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/TheMindWebsocketMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/TheMindWebsocketMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/models/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/shared/EncapsulatingMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/shared/EncapsulatingMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/ITheMindWebsocketGameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/ITheMindWebsocketGameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,23 +19,24 @@
     <session id="-1966864736">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="42" />
+          <entry key="java" value="43" />
           <entry key="xml" value="3" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="42" />
+          <entry key="JAVA" value="43" />
           <entry key="XML" value="3" />
           <entry key="YAML" value="2" />
         </counts>
@@ -47,14 +44,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="3230" />
+          <entry key="java" value="3232" />
           <entry key="xml" value="5" />
           <entry key="yml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3230" />
+          <entry key="JAVA" value="3232" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="5" />
           <entry key="YAML" value="4" />
@@ -65,60 +62,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/websocketserver/pom.xml">
+        <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1592">
-              <caret line="108" column="44" selection-start-line="106" selection-start-column="8" selection-end-line="120" selection-end-column="18" />
+            <state relative-caret-position="623">
+              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java">
+        <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+            <state relative-caret-position="474">
+              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#626#645#0" expanded="true" />
-                <element signature="e#626#645#0" expanded="true" />
-                <element signature="e#953#1153#0" expanded="true" />
-                <element signature="e#651#659#0" expanded="true" />
-                <element signature="e#953#1153#0" expanded="true" />
-                <element signature="e#855#871#1" expanded="true" />
-                <element signature="e#1013#1038#0" expanded="true" />
-                <element signature="e#1013#1038#0" expanded="true" />
-                <element signature="e#1112#1126#0" expanded="true" />
-                <element signature="e#1226#1355#0" expanded="true" />
-                <element signature="e#1189#1197#0" expanded="true" />
-                <element signature="e#1226#1355#0" expanded="true" />
-                <element signature="e#1225#1241#0" expanded="true" />
-                <element signature="e#1313#1330#0" expanded="true" />
-                <element signature="e#1313#1330#0" expanded="true" />
-                <element signature="e#1514#1848#0" expanded="true" />
-                <element signature="e#1514#1848#0" expanded="true" />
-                <element signature="e#2034#2512#0" expanded="true" />
-                <element signature="e#1563#1571#0" expanded="true" />
-                <element signature="e#2034#2512#0" expanded="true" />
-                <element signature="e#2078#2498#0" expanded="true" />
-                <element signature="e#1913#1922#0" expanded="true" />
-                <element signature="e#1916#1928#0" expanded="true" />
-                <element signature="e#2078#2498#0" expanded="true" />
-                <element signature="e#2394#2395#0" expanded="true" />
-                <element signature="e#2423#2424#0" expanded="true" />
-                <element signature="e#1827#1847#1" expanded="true" />
-                <element signature="e#2952#3129#0" expanded="true" />
-                <element signature="e#1829#1837#0" expanded="true" />
-                <element signature="e#2952#3129#0" expanded="true" />
-                <element signature="e#3296#3297#0" expanded="true" />
-                <element signature="e#3326#3327#0" expanded="true" />
-                <element signature="e#1307#1315#1" expanded="true" />
-                <element signature="e#3362#3374#0" expanded="true" />
-                <element signature="e#3362#3374#0" expanded="true" />
-                <element signature="e#3487#3631#0" expanded="true" />
-                <element signature="e#3430#3438#0" expanded="true" />
-                <element signature="e#3487#3631#0" expanded="true" />
-                <element signature="e#3443#3458#0" expanded="true" />
+                <element signature="e#516#539#1" expanded="true" />
+                <element signature="e#548#631#1" expanded="true" />
+                <element signature="e#948#974#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/ITheMindWebsocketGameLogic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,31 +103,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/models/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            <state relative-caret-position="340">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#528#563#0" expanded="true" />
-                <element signature="e#541#562#0" expanded="true" />
-                <element signature="e#541#562#0" expanded="true" />
-                <element signature="e#528#563#0" expanded="true" />
-                <element signature="e#624#638#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
-                <element signature="e#692#717#1" expanded="true" />
-                <element signature="e#692#717#1" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#1020#1040#0" expanded="true" />
-                <element signature="e#1020#1040#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,11 +115,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/TheMindEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
+            <state relative-caret-position="527">
               <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1361#1376#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/ITheMindWebsocketLogic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -195,7 +137,7 @@
         <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/TheMindWebsocketLogic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="901">
-              <caret line="62" column="48" lean-forward="true" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+              <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -203,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/ReadyHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="187">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -272,7 +214,6 @@
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/ITheMindWebsocketLogic.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/messagesmodels/PlayerReady.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/ReadyHandler.java" />
-        <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagemodelhelper/ITheMindMessageModelHelper.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/TheMindWebsocketLogic.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/PlayerIsinQue.java" />
@@ -283,6 +224,7 @@
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/models/Player.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/ITheMindWebsocketGameLogic.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java" />
+        <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.java" />
       </list>
     </option>
   </component>
@@ -293,10 +235,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -304,9 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -385,10 +324,22 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="themindwebsocketlogic" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
+              <item name="websocketserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="themindwebsocketmessageprocessor" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -426,18 +377,19 @@
       <workItem from="1559478287295" duration="10051000" />
       <workItem from="1559557344494" duration="1149000" />
       <workItem from="1559559343317" duration="106000" />
-      <workItem from="1560276145095" duration="6212000" />
+      <workItem from="1560276145095" duration="6284000" />
+      <workItem from="1560322991194" duration="1837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17518000" />
+    <option name="totallyTimeSpent" value="19427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32416108" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32885906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -575,16 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/PlayerReady.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -595,13 +537,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/ReadyHandler.java">
+    <entry file="file://$PROJECT_DIR$/websocketserver/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="1836">
+          <caret line="108" column="44" selection-start-line="106" selection-start-column="8" selection-end-line="120" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/ITheMindWebsocketGameLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/models/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/TheMindEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/ITheMindWebsocketLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/TheMindWebsocketLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -612,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1592">
-          <caret line="108" column="44" selection-start-line="106" selection-start-column="8" selection-end-line="120" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/PlayerIsinQue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -626,117 +602,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/ITheMindWebsocketLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/TheMindEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1361#1376#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/TheMindWebsocketLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="62" column="48" lean-forward="true" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/models/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#528#563#0" expanded="true" />
-            <element signature="e#541#562#0" expanded="true" />
-            <element signature="e#541#562#0" expanded="true" />
-            <element signature="e#528#563#0" expanded="true" />
-            <element signature="e#624#638#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#692#717#1" expanded="true" />
-            <element signature="e#692#717#1" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#1020#1040#0" expanded="true" />
-            <element signature="e#1020#1040#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/ITheMindWebsocketGameLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        <state relative-caret-position="623">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#626#645#0" expanded="true" />
-            <element signature="e#626#645#0" expanded="true" />
-            <element signature="e#953#1153#0" expanded="true" />
-            <element signature="e#651#659#0" expanded="true" />
-            <element signature="e#953#1153#0" expanded="true" />
-            <element signature="e#855#871#1" expanded="true" />
-            <element signature="e#1013#1038#0" expanded="true" />
-            <element signature="e#1013#1038#0" expanded="true" />
-            <element signature="e#1112#1126#0" expanded="true" />
-            <element signature="e#1226#1355#0" expanded="true" />
-            <element signature="e#1189#1197#0" expanded="true" />
-            <element signature="e#1226#1355#0" expanded="true" />
-            <element signature="e#1225#1241#0" expanded="true" />
-            <element signature="e#1313#1330#0" expanded="true" />
-            <element signature="e#1313#1330#0" expanded="true" />
-            <element signature="e#1514#1848#0" expanded="true" />
-            <element signature="e#1514#1848#0" expanded="true" />
-            <element signature="e#2034#2512#0" expanded="true" />
-            <element signature="e#1563#1571#0" expanded="true" />
-            <element signature="e#2034#2512#0" expanded="true" />
-            <element signature="e#2078#2498#0" expanded="true" />
-            <element signature="e#1913#1922#0" expanded="true" />
-            <element signature="e#1916#1928#0" expanded="true" />
-            <element signature="e#2078#2498#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#1827#1847#1" expanded="true" />
-            <element signature="e#2952#3129#0" expanded="true" />
-            <element signature="e#1829#1837#0" expanded="true" />
-            <element signature="e#2952#3129#0" expanded="true" />
-            <element signature="e#3296#3297#0" expanded="true" />
-            <element signature="e#3326#3327#0" expanded="true" />
-            <element signature="e#1307#1315#1" expanded="true" />
-            <element signature="e#3362#3374#0" expanded="true" />
-            <element signature="e#3362#3374#0" expanded="true" />
-            <element signature="e#3487#3631#0" expanded="true" />
-            <element signature="e#3430#3438#0" expanded="true" />
-            <element signature="e#3487#3631#0" expanded="true" />
-            <element signature="e#3443#3458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/ReadyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#516#539#1" expanded="true" />
+            <element signature="e#548#631#1" expanded="true" />
+            <element signature="e#948#974#0" expanded="true" />
           </folding>
         </state>
       </provider>
