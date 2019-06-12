@@ -34,7 +34,7 @@ public class TheMindWebsocketLogic implements  ITheMindWebsocketLogic {
     }
 
     @Override
-    public void PlayerReady(String playerId, String sessionId) {
+    public void PlayerReady(String sessionId) {
         messageCreator.MessageCreator("ReadyRecieved", TheMindMessageModelHelper.playerReady(),sessionId);
     }
 
