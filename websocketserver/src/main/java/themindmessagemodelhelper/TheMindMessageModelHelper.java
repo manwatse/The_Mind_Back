@@ -4,7 +4,7 @@ import messagesendingmodels.PlayerIsinQue;
 
 public class TheMindMessageModelHelper {
 
-
+ //todo object to json encapsulatingmessage(String message, string object)
     public static String updateGame() {
         return null;
     }
