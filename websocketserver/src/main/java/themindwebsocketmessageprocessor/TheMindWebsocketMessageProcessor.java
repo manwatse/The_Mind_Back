@@ -15,16 +15,17 @@ public class TheMindWebsocketMessageProcessor implements  ITheMindWebsocketMessa
     public void processMessage(String msg, String sessionId) {
         Gson gson = new Gson();
         EncapsulatingMessage messageObject = gson.fromJson(msg,EncapsulatingMessage.class);
+        String messageType=messageObject.getMessage();
 
         //todo add handlers
 
-        switch (messageObject.getMessage()) {
+        switch (messageType) {
             default:
                 System.out.println("Unknown action");
                 break;
-            case "PLayerReady":
+            case "MessagePlayerJoinQueue":
                 ReadyHandler readyHandler = new ReadyHandler(logic);
-                readyHandler.PlayerReady(messageObject.getMessage(),sessionId);
+                readyHandler.PlayerReady(messageObject.getObject(),sessionId);
                 break;
             case "UpdateGame":
 

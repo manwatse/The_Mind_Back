@@ -3,6 +3,8 @@ package themindwebsocketlogic;
 import themindwebsocketevent.ITheMindEvent;
 import themindwebsocketgamelogic.ITheMindWebsocketGameLogic;
 
+import java.util.ArrayList;
+
 public interface ITheMindWebsocketLogic {
 
     void setEventSockets(ITheMindEvent eventSockets);
@@ -12,6 +14,8 @@ public interface ITheMindWebsocketLogic {
     void CreateGame(int gameId);
 
     void JoinGame(String userid, String sessionId);
+
+    void UpdateQueue(int numberOfPlayers, ArrayList<String> sessionIds);
 
     void EndGameMessage(String sessionID, String winner);
 

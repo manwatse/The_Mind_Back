@@ -6,11 +6,12 @@ import themindwebsocketmessageprocessor.ITheMindWebsocketMessageProcessor;
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashSet;
 
-@ServerEndpoint(value = "/TheMind/")
+@ServerEndpoint(value = "/TheMind/websocket/")
 
-public class TheMindEvent {
+public class TheMindEvent implements ITheMindEvent {
     ITheMindWebsocketMessageProcessor messageProcessor;
     ITheMindWebsocketLogic logic;
     static HashSet<Session> sessions = new HashSet<>();
@@ -57,6 +58,14 @@ public class TheMindEvent {
                     System.out.println(e);
                 }
             }
+        }
+    }
+
+    @Override
+    public void sendMessageToAll(String message, ArrayList<String> sessionIds) {
+
+        for (String s: sessionIds) {
+            sendMessage(message,s);
         }
     }
 

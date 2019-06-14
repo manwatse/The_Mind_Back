@@ -1,6 +1,8 @@
 package themindmessagemodelhelper;
 
-import messagesendingmodels.PlayerIsinQue;
+import com.google.gson.Gson;
+import messagesendingmodels.MessageUpdateQue;
+import messagesendingmodels.PLayerInQueue;
 
 public class TheMindMessageModelHelper {
 
@@ -8,11 +10,18 @@ public class TheMindMessageModelHelper {
     public static String updateGame() {
         return null;
     }
+    private static final Gson gson = new Gson();
 
 
-    public static Object playerReady() {
-        PlayerIsinQue respone= new PlayerIsinQue();
-        return respone;
+    public static String playerReady() {
+        PLayerInQueue response= new PLayerInQueue();
+        return  gson.toJson(response);
+    }
+
+    public static String MorePlayers(int players){
+        MessageUpdateQue response = new MessageUpdateQue(players);
+        return  gson.toJson(response);
+
     }
 
 

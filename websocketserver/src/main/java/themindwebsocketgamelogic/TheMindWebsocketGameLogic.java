@@ -8,26 +8,29 @@ import java.util.Random;
 
 public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
 
-    ArrayList<Player> players;
-    ArrayList<Integer> cards;
+   private ArrayList<Player> players = new ArrayList<Player>();
+   private ArrayList<Integer> cards = new ArrayList<Integer>();
 
-    int votes;
-    int lifePoints;
-    int gameId;
-    int level;
-    int lastPlayedCard;
-    Boolean gameStarted=false;
+    private int votes;
+    private int lifePoints;
+    private int gameId;
+    private int level;
+    private int lastPlayedCard;
+    private Boolean gameStarted=false;
+    private ArrayList<String> sessionIds= new ArrayList<String>();
 
     public  TheMindWebsocketGameLogic(int gameId){
+
         resetDeck();
         Collections.shuffle(cards);
         this.gameId=gameId;
+
     }
 
     @Override
     public void join(Player player) {
 
-        if (players.size()==4){
+        if (players.size()==2){
             StartGame();
         }
         else {
@@ -164,10 +167,20 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
     }
 
     @Override
+    public ArrayList<String> getSessionIds() {
+        sessionIds.clear();
+        for (Player p: players) {
+            sessionIds.add(p.getSessionId());
+        }
+        return sessionIds;
+    }
+
+    @Override
     public void resetDeck() {
-        cards.clear();
+        this.cards.add(1);
+        this.cards.clear();
         for (int i =1;i==100;i++){
-            cards.add(i);
+            this.cards.add(i);
         }
     }
 

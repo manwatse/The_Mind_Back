@@ -33,6 +33,8 @@ public interface ITheMindWebsocketGameLogic {
 
     ArrayList<Player> getPlayers();
 
+    ArrayList<String> getSessionIds();
+
     Boolean checkCards();
 
     Boolean gameStarted();

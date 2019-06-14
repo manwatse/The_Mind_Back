@@ -10,7 +10,7 @@ public class Player {
     String id;
     String sessionId;
     String playerid;
-    ArrayList<Integer> cards;
+    ArrayList<Integer> cards = new ArrayList<Integer>();
     Comparator c = Collections.reverseOrder();
 
 

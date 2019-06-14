@@ -2,6 +2,7 @@ package themindwebsocketevent;
 
 import javax.websocket.CloseReason;
 import javax.websocket.Session;
+import java.util.ArrayList;
 
 public interface ITheMindEvent {
 
@@ -14,4 +15,6 @@ public interface ITheMindEvent {
     void onError(Throwable cause, Session session);
 
     void sendMessage(String message,String sessionId);
+
+    void sendMessageToAll(String message, ArrayList<String> sessionIds);
 }

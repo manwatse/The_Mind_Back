@@ -2,19 +2,27 @@ package shared;
 
 public class EncapsulatingMessage {
 
-    String message;
-    Object object;
+    private String messageType;
+    private String messageData;
 
-    public EncapsulatingMessage(String message, Object object) {
-        this.message = message;
-        this.object = object;
+    public EncapsulatingMessage(String message, String object) {
+        this.messageType = message;
+        this.messageData = object;
     }
 
     public String getMessage() {
-        return message;
+        return messageType;
     }
 
-    public Object getObject() {
-        return object;
+    public String getObject() {
+        return messageData;
+    }
+
+    public void setMessage(String message) {
+        this.messageType = message;
+    }
+
+    public void setObject(String object) {
+        this.messageData = object;
     }
 }
