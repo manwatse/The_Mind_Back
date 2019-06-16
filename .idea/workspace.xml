@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c8a1e89-a42f-4c2d-b0cf-b869c436a98e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/TheMindEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/TheMindEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,7 +59,7 @@
         <counts>
           <entry key="dummy" value="50" />
           <entry key="java" value="7727" />
-          <entry key="xml" value="195" />
+          <entry key="xml" value="225" />
           <entry key="yml" value="4" />
         </counts>
       </usages-collector>
@@ -66,7 +67,7 @@
         <counts>
           <entry key="JAVA" value="7727" />
           <entry key="PLAIN_TEXT" value="50" />
-          <entry key="XML" value="195" />
+          <entry key="XML" value="225" />
           <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
@@ -90,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="176" column="5" lean-forward="true" selection-start-line="176" selection-start-column="5" selection-end-line="176" selection-end-column="5" />
+            <state relative-caret-position="480">
+              <caret line="175" column="9" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1208#1408#0" expanded="true" />
@@ -134,16 +135,16 @@
         <entry file="file://$PROJECT_DIR$/restserver/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="26" column="62" lean-forward="true" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+              <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="64" lean-forward="true" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+            <state relative-caret-position="442">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -173,8 +174,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websocketserver/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="255">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="24" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -218,6 +219,7 @@
       <find>jett</find>
       <find>server</find>
       <find>re</find>
+      <find>remo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -273,10 +275,10 @@
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/ITheMindWebsocketLogic.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/TheMindWebsocketLogic.java" />
         <option value="$PROJECT_DIR$/restserver/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/websocketserver/pom.xml" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/TheMindEvent.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java" />
+        <option value="$PROJECT_DIR$/websocketserver/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -418,7 +420,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560705305400" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560705492770" />
     <property name="last_opened_file_path" value="D:/downloads/java-docs-samples-87000b13f5b10937659985f1a06d89519a550ab2/firestore" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -518,12 +520,12 @@
       <workItem from="1560593030817" duration="11669000" />
       <workItem from="1560683486405" duration="5998000" />
       <workItem from="1560691153890" duration="2733000" />
-      <workItem from="1560694335136" duration="10081000" />
+      <workItem from="1560694335136" duration="10332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75247000" />
+    <option name="totallyTimeSpent" value="75498000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1110,24 +1112,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="64" lean-forward="true" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/restserver/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="26" column="62" lean-forward="true" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+          <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -1147,8 +1135,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="176" column="5" lean-forward="true" selection-start-line="176" selection-start-column="5" selection-end-line="176" selection-end-column="5" />
+        <state relative-caret-position="480">
+          <caret line="175" column="9" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1208#1408#0" expanded="true" />
@@ -1162,6 +1150,20 @@
             <element signature="e#3879#3913#0" expanded="true" />
             <element signature="e#3879#3913#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocketserver/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
     </entry>
