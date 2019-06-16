@@ -10,6 +10,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>websocketserver</artifactId>
+
+    <properties>
+        <sonar.coverage.exclusions>
+            **/restserver/**/*,
+            **/restapi/*,
+            **/shared/*,
+            **/themindmessageevent/*,
+            **/themindmessagemodelhelper/*,
+            **/themindmessagehandlers/*,
+            **/models/*,
+            **/messagesendingmodels/*,
+            **/messagesreceivingmodels/*,
+        </sonar.coverage.exclusions>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.commons</groupId>

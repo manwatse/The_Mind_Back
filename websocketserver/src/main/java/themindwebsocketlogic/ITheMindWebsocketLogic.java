@@ -29,6 +29,10 @@ public interface ITheMindWebsocketLogic {
 
     void UpdatePlayerScore(String playerid, int score, String sessionId);
 
+    void GetPlayerScore(String playerid,String sessionId);
+
+    void SetPlayerScore(String playerid,String sessionId);
+
 
 
 

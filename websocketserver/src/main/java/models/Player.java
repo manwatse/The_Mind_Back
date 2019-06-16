@@ -9,12 +9,11 @@ public class Player {
 
     String id;
     String sessionId;
-    String playerid;
     ArrayList<Integer> cards = new ArrayList<Integer>();
     Comparator c = Collections.reverseOrder();
 
 
-    public Player(String sessionId, String id){
+    public Player( String id,String sessionId){
         this.id=id;
         this.sessionId=sessionId;
     }
@@ -44,10 +43,6 @@ public class Player {
 
     public String getSessionId() {
         return sessionId;
-    }
-
-    public String getPlayerid() {
-        return playerid;
     }
 
     public ArrayList<Integer> getCards() {

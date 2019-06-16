@@ -1,6 +1,7 @@
 package themindwebsocketlogic;
 
 import models.Player;
+import models.Score;
 import themindmessagemodelhelper.TheMindMessageModelHelper;
 import themindwebsocketmessagecreator.ITheMindWebsocketMessageCreator;
 import themindwebsocketmessagecreator.TheMindWebsocketMessageCreator;
@@ -11,7 +12,6 @@ import themindwebsocketmessageprocessor.ITheMindWebsocketMessageProcessor;
 import restapi.ITheMindRestHandler;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
 
@@ -22,6 +22,7 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
     ITheMindEvent event;
     ITheMindWebsocketMessageProcessor messageProcessor;
     ArrayList<TheMindWebsocketGameLogic> games= new ArrayList<TheMindWebsocketGameLogic>();
+    ArrayList<Score> scores= new ArrayList<>();
 
     public TheMindWebsocketLogic(ITheMindRestHandler rest) {
         this.rest = rest;
@@ -48,7 +49,7 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
         messageCreator.MessageCreator("Joined Queue", TheMindMessageModelHelper.playerReady(), sessionId);
     }
 
-    //todo game logic
+
     @Override
     public void CreateGame(int gameId) {
         gameId++;
@@ -67,6 +68,10 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
                     g.join(newPlayer);
                     this.numberOfPlayers = g.getPlayers().size();
                     UpdateQueue(g.getPlayers().size(),g.getSessionIds());
+                    if (g.gameStarted()==true){
+                        messageCreator.MessageCreatorAll("Game Started",TheMindMessageModelHelper.GameStarted
+                                (g.getGameId(),g.getLifePoints(),g.getVotes(),g.getPlayers()),g.getSessionIds());
+                    }
                 }
 
             } else if (last.gameStarted()) {
@@ -77,12 +82,12 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
             }
         }
     }
-    //todo update que
+
 
     @Override
     public void UpdateQueue(int numberOfPlayers,ArrayList<String> sessionIds) {
 
-        messageCreator.MessageCreatorAll("More players", TheMindMessageModelHelper.MorePlayers(numberOfPlayers), sessionIds);
+        messageCreator.MessageCreatorAll("More players", TheMindMessageModelHelper.UpdateQueue(numberOfPlayers), sessionIds);
     }
 
     @Override
@@ -110,6 +115,9 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
     public void RemovePlayer(String sessionid) {
         for (TheMindWebsocketGameLogic g : games) {
             g.removePlayer(sessionid);
+            if (g.getPlayers().size()==0){
+                games.remove(g);
+            }
         }
     }
 
@@ -126,6 +134,16 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
 
     @Override
     public void UpdatePlayerScore(String playerId, int score, String sessionId) {
+
+    }
+
+    @Override
+    public void GetPlayerScore(String playerid, String sessionId) {
+
+    }
+
+    @Override
+    public void SetPlayerScore(String playerid, String sessionId) {
 
     }
 }

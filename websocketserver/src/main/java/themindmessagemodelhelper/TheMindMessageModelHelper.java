@@ -1,8 +1,12 @@
 package themindmessagemodelhelper;
 
 import com.google.gson.Gson;
+import messagesendingmodels.MessageGameStarted;
 import messagesendingmodels.MessageUpdateQue;
 import messagesendingmodels.PLayerInQueue;
+import models.Player;
+
+import java.util.ArrayList;
 
 public class TheMindMessageModelHelper {
 
@@ -18,12 +22,16 @@ public class TheMindMessageModelHelper {
         return  gson.toJson(response);
     }
 
-    public static String MorePlayers(int players){
+    public static String UpdateQueue(int players){
         MessageUpdateQue response = new MessageUpdateQue(players);
         return  gson.toJson(response);
 
     }
+    public static  String GameStarted(int gameId, int lifepoints, int votes, ArrayList<Player> players) {
+        MessageGameStarted response = new MessageGameStarted(gameId,lifepoints,votes,players);
 
+        return gson.toJson(response);
+    }
 
     public static String Vote() {
         return null;

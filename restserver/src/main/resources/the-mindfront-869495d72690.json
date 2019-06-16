@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "the-mindfront",
+  "private_key_id": "869495d7269006bad6b713a790a2ad91ce1c0c4d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDYdIBf777+VjcV\nMN9iUpzw5vmnMRgPFhGVzGum8Ax6q+LdGzp0eDPKJgHSxzuJHp18s5EHeBRkNia0\n9Y7h6du8hwIGcVRVRcju/ilUxohz4/NQT/zSBacW+391ZoTIB+N7lmw80U4tVxfD\n4pTKBFQUQg0njrzcaFPUUiOMtS/oPWSKNGRgvYHGB3h604lfzRsVFNI8eCPjRfam\noirg9MQ9WW2ZETKSk3BaXgkpYqC3+P41PZ+RgoCwwCrQ/f839y0DGBhiKt2hJLsL\nvJ5QRSl0YfsSjWxf/y8SrDskDL4GoCkI5FnlXR4b6aSj8EOZl4k7wbNCXNZwVcKF\nJZUNlKQTAgMBAAECggEAZfhsScXN+k9vX6JIei9lE/AcCHGOXf0Nh75nsJtBpcC3\n/WXIYfoGm+LP1RZaq7wqgQau+g/Nu2/vSCyuhSsAg44unA5jplBb2osNuYxV2BK5\nG0qzVdWn46HTZ+FGCF3/AsfYccZAyAdRgMyLP6hOW8TKIaqSulrDszCG4tCwovz7\nRH+3cJfZ2Od5gQLLqpf1QH2G5axeb3kB/x/Nr4nWabg8bluJbDuSaI5JhCgHEGWL\nveLHi5PiwIBD+R6Y/scWaaU1bTiyEHOuncfIp9e0CO3r4+B+pNKNA2TzeGRneq71\n4l8eHZw3YZtbAg7/FgTVZvlJ7oO+dG0gggIcWvTUAQKBgQDtys71hkOpUuX+s5jc\nn0z/vizDuVxwseqWfPHoGAztISo2SBW4+mZzIElKBYDZRCauSJ8Zupo7q00Gkurx\njQ1F6IKeK/Wqn69ZpZV7rIE/szVhFenv+VE6SQXEjc6mMN0iFBvpnN2ET2RwSPT2\nrTL3D9vr7mSI9KuruDFpjGnREwKBgQDpB3GKHTsF/5lSTi76UXXPSJ8gnIUv2j+N\niMe4SNn+UTaT8nCbNg8u6PtXDuhWCLyR7nSnc4siPg65btvDT++MQM/kbPtx2Qer\n6c5kqW8SoLQ7Py9lmrmun4uCAHYMCPwWHnt0LJ5nnly8T+Mg9/gFHRDwJEdD8jT8\nKHTjaDdBAQKBgEevhTa1VD5+dEGViPaxu3e5sCsM/VYn/K2DWzX50iPGhMA6ePn7\n2tjIGfALuq1FA1g1ImmSPJ7SZHUf414QhLjXgFEItZXLcARZi7ft6ET41JXBEnY6\ntgcZLnjzuyGUx4VXhJanqIwTlxbWl6qpyhx7FnSIuJwlDn/FFnhYUSorAoGAGVdk\n4ocxPwK/0rKL607mh+c23t4GoeCTHrosNf8+Laj5TXeFBWwIlKpjguEtJQYIM7qB\n1x/6lnu3MDU9Eu1jeJYnxYiQg539dpWTi2DdomH1l6fUaLE91h6lljqkm8RyXZlt\nBYJAq7YOEbCCW7h7sVqq1+KqGVqCppVjuMNBlwECgYASeejgdEhr5Mvmxp1xVTkj\nJwqZ5lvNN9vb0OoS/VtrUpvSdTfopCWnpL2dQ+YmqykwLg45S8v9TkpIo0byrbkT\n55EbMikADkGSd0r3oNfk3MRG7a39/I9Lia1E9UyN56TIatSkksT+5eAE3434D02z\nX6E7TI3BI1N7bCs+Bq8UCg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-xsd1l@the-mindfront.iam.gserviceaccount.com",
+  "client_id": "115714527498602148321",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xsd1l%40the-mindfront.iam.gserviceaccount.com"
+}

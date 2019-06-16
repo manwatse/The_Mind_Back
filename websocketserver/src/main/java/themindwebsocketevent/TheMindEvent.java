@@ -24,6 +24,7 @@ public class TheMindEvent implements ITheMindEvent {
     public void onConnect(javax.websocket.Session session) {
         sessions.add(session);
         System.out.println("[Connected] SessionID:" + session.getId());
+
     }
 
     @OnMessage
@@ -63,7 +64,7 @@ public class TheMindEvent implements ITheMindEvent {
 
     @Override
     public void sendMessageToAll(String message, ArrayList<String> sessionIds) {
-
+        System.out.println("Send to group");
         for (String s: sessionIds) {
             sendMessage(message,s);
         }

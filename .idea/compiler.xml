@@ -10,5 +10,8 @@
         <module name="websocketserver" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="restservefirebase" target="7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

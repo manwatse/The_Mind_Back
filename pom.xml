@@ -11,7 +11,21 @@
     <modules>
         <module>restserver</module>
         <module>websocketserver</module>
+
     </modules>
+    <properties>
+        <sonar.coverage.exclusions>
+            **/restserver/**/*,
+            **/restapi/*,
+            **/shared/*,
+            **/themindmessageevent/*,
+            **/themindmessagemodelhelper/*,
+            **/themindmessagehandlers/*,
+            **/models/*,
+            **/messagesendingmodels/*,
+            **/messagesreceivingmodels/*,
+        </sonar.coverage.exclusions>
+    </properties>
 
     <build>
         <plugins>

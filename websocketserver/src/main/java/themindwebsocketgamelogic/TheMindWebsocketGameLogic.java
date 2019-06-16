@@ -12,7 +12,7 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
    private ArrayList<Integer> cards = new ArrayList<Integer>();
 
     private int votes;
-    private int lifePoints;
+    private int lifePoints=10;
     private int gameId;
     private int level;
     private int lastPlayedCard;
@@ -29,13 +29,12 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
 
     @Override
     public void join(Player player) {
+        players.add(player);
 
         if (players.size()==2){
             StartGame();
         }
-        else {
-            players.add(player);
-        }
+
 
     }
 
@@ -58,7 +57,7 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
     public void dealCards() {
         Collections.shuffle(cards);
         for (Player p:players) {
-            for (int temp =level;temp==0;temp--){
+            for (int temp =1;temp<=level;temp++){
 
                 p.addCard(cards.get(cards.size()-1));
                 cards.remove(cards.size()-1);
@@ -123,13 +122,6 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
 
     }
 
-
-
-    @Override
-    public int getGameId() {
-        return gameId;
-    }
-
     @Override
     public void vote() {
         if (players.size()==3&&votes==3){
@@ -157,29 +149,10 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
     }
 
     @Override
-    public Boolean gameStarted() {
-        return gameStarted;
-    }
-
-    @Override
-    public ArrayList<Player> getPlayers() {
-        return players;
-    }
-
-    @Override
-    public ArrayList<String> getSessionIds() {
-        sessionIds.clear();
-        for (Player p: players) {
-            sessionIds.add(p.getSessionId());
-        }
-        return sessionIds;
-    }
-
-    @Override
     public void resetDeck() {
         this.cards.add(1);
         this.cards.clear();
-        for (int i =1;i==100;i++){
+        for (int i =1;i<=100;i++){
             this.cards.add(i);
         }
     }
@@ -202,5 +175,35 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
                 players.remove(p);
             }
         }
+    }
+    @Override
+    public ArrayList<String> getSessionIds() {
+        sessionIds.clear();
+        for (Player p: players) {
+            sessionIds.add(p.getSessionId());
+        }
+        return sessionIds;
+    }
+    @Override
+    public ArrayList<Player> getPlayers() {
+        return players;
+    }
+
+    @Override
+    public Boolean gameStarted() {
+        return gameStarted;
+    }
+
+    @Override
+    public int getGameId() {
+        return gameId;
+    }
+
+    public int getLifePoints() {
+        return lifePoints;
+    }
+
+    public int getVotes() {
+        return votes;
     }
 }
