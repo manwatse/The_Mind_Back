@@ -52,7 +52,7 @@ public class TheMindEvent implements ITheMindEvent {
 
     public void sendMessage(String message, String sessionID) {
         for (javax.websocket.Session session : sessions) {
-            if (session.getId() == sessionID) {
+            if (session.getId().equals(sessionID)) {
                 try {
                     session.getBasicRemote().sendText(message);
                 } catch (IOException e) {

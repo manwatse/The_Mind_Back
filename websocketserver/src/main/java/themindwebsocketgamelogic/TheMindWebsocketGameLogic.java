@@ -70,7 +70,7 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
     @Override
     public void leave(String sessionId) {
         for (Player p:players) {
-            if (p.getSessionId()==sessionId){
+            if (p.getSessionId().equals(sessionId)){
                 players.remove(p);
             }
         }
@@ -131,7 +131,6 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
             removeLastCardFromPlayers(players);
         }
 
-
     }
 
     @Override
@@ -171,7 +170,7 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic{
     @Override
     public void removePlayer(String sessionId) {
         for (Player p: players) {
-            if (p.getSessionId()==sessionId){
+            if (p.getSessionId().equals(sessionId)){
                 players.remove(p);
             }
         }

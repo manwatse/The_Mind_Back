@@ -17,6 +17,7 @@
             **/restapi/*,
             **/shared/*,
             **/themindmessageevent/*,
+            **/TheMindWebsocketMain/,
             **/themindmessagemodelhelper/*,
             **/themindmessagehandlers/*,
             **/models/*,
