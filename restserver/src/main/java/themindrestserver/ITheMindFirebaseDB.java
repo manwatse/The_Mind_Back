@@ -10,8 +10,8 @@ public interface ITheMindFirebaseDB {
 
     boolean setPlayerScore(String playerId,int score);
 
-    int getPlayerScore(String PlayerId);
+    PlayerScore getPlayerScore(String PlayerId);
 
-    boolean createPlayerScore(String PlayerId);
+    PlayerScore createPlayerScore(String PlayerId);
 
 }

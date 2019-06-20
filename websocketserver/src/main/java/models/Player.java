@@ -23,8 +23,11 @@ public class Player {
     }
 
     public void removeCard(int card){
-
-        cards.remove(Integer.valueOf(card));
+        for (int i=0;i< cards.size();i++){
+            if (i==card){
+                cards.remove(i);
+            }
+        }
     }
 
     public void removeLastCard(){

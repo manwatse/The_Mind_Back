@@ -1,21 +1,20 @@
 package themindmessagemodelhelper;
 
 import com.google.gson.Gson;
-import messagesendingmodels.MessageGameStarted;
-import messagesendingmodels.MessageUpdateQue;
-import messagesendingmodels.PLayerInQueue;
+import messagesendingmodels.*;
 import models.Player;
+import models.Score;
 
 import java.util.ArrayList;
 
 public class TheMindMessageModelHelper {
-
- //todo object to json encapsulatingmessage(String message, string object)
-    public static String updateGame() {
-        return null;
-    }
     private static final Gson gson = new Gson();
 
+
+    public static String updateGame(ArrayList<Player> players, String actor, int lastPlayed, int level, int gameid, int votes,int lifepoints) {
+        MessageUpdateGame response = new MessageUpdateGame(players,actor,lastPlayed,level,gameid,votes,lifepoints);
+        return gson.toJson(response);
+    }
 
     public static String playerReady() {
         PLayerInQueue response= new PLayerInQueue();
@@ -30,6 +29,11 @@ public class TheMindMessageModelHelper {
     public static  String GameStarted(int gameId, int lifepoints, int votes, ArrayList<Player> players) {
         MessageGameStarted response = new MessageGameStarted(gameId,lifepoints,votes,players);
 
+        return gson.toJson(response);
+    }
+    public  static String GetScore(ArrayList<Score>scores){
+        System.out.println(scores.get(0));
+        MessageScores response= new MessageScores(scores);
         return gson.toJson(response);
     }
 

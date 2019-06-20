@@ -1,0 +1,15 @@
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\dto\CreatePlayerScoreRequestDto.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\themindrestserver\TheMindFirebaseResponse.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\themindrestserver\TheMindFirebaseDB.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\themindrestserver\TheMindRESTLogic.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\themindrestserver\ITheMindFirebaseDB.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\themindrestserver\ITheMindRESTResponse.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\themindrestserver\ResponseHelper.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\dto\BoolResultDto.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\dto\HighscoreResultDto.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\dto\SetPlayerScoreDto.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\dto\BaseResultDto.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\models\PlayerScore.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\themindrestserver\TheMindBackRESTService.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\themindrestserver\ITheMindRESTLogic.java
+D:\school\semester 3.v2\SE\The_Mind_Back\restserver\src\main\java\dto\GetPlayerScoreDto.java

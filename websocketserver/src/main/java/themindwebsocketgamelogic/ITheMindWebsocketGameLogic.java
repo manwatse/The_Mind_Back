@@ -18,7 +18,6 @@ public interface ITheMindWebsocketGameLogic {
 
     void endGame();
 
-    //todo  card played
     void Cardplayed( int card);
 
     void vote();

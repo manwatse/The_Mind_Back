@@ -27,7 +27,8 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
     public TheMindWebsocketLogic(ITheMindRestHandler rest) {
         this.rest = rest;
         gameId = 0;
-
+        scores.add(new Score("Mzn08P68YyT4ecysSjWg1sgBVcP2",0));
+        scores.add(new Score("PM3ZVK5wPafXyZAoPBxOuhupJXa2",0));
 
     }
 
@@ -48,17 +49,73 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
         }
         messageCreator.MessageCreator("Joined Queue", TheMindMessageModelHelper.playerReady(), sessionId);
     }
+    @Override
+    public void vote(String playerId, int gameId) {
+        for (TheMindWebsocketGameLogic g:games) {
+            if (gameId==g.getGameId()){
+                g.vote();
+
+            }
+        }
+    }
 
 
     @Override
+    public void playCard(String playerId, int playedCard,String sessionId) {
+        for (TheMindWebsocketGameLogic g:games) {
+            if (g.searchForPlayer(sessionId)){
+                g.Cardplayed(playedCard);
+                messageCreator.MessageCreatorGroup("UpdateGame",TheMindMessageModelHelper.updateGame
+                        (g.getPlayers(),playerId,g.getLastPlayedCard(),g.getLevel(),g.getGameId(),g.getVotes(),g.getLifePoints()),g.getSessionIds());
+                System.out.println("last played card "+ g.getLastPlayedCard() );
+            }
+        }
+
+
+    }
+
+    @Override
+    public void GetScores(String sessionId) {
+        messageCreator.MessageCreator("scores",TheMindMessageModelHelper.GetScore(this.scores),sessionId);
+
+    }
+
+
+    @Override
+    public void RemovePlayer(String sessionid) {
+        for (TheMindWebsocketGameLogic g : games) {
+            g.removePlayer(sessionid);
+            if (g.getPlayers().size()==0){
+                games.remove(g);
+            }
+        }
+    }
+
+    @Override
+    public void emoji(String playerId, String emoji, String sessionId) {
+
+    }
+
+    @Override
+    public ITheMindWebsocketGameLogic getGame(int gameId) {
+
+        for (TheMindWebsocketGameLogic g : games) {
+            if (gameId == g.getGameId()) {
+                return g;
+            }
+        }
+        return null;
+    }
+
+
     public void CreateGame(int gameId) {
         gameId++;
         TheMindWebsocketGameLogic g = new TheMindWebsocketGameLogic(gameId);
         games.add(g);
     }
 
-    @Override
-    public void JoinGame(String userid, String sessionId) {
+
+    private void JoinGame(String userid, String sessionId) {
         TheMindWebsocketGameLogic last = games.get(games.size() - 1);
         Player newPlayer = new Player(userid, sessionId);
 
@@ -69,7 +126,7 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
                     this.numberOfPlayers = g.getPlayers().size();
                     UpdateQueue(g.getPlayers().size(),g.getSessionIds());
                     if (g.gameStarted()==true){
-                        messageCreator.MessageCreatorAll("Game Started",TheMindMessageModelHelper.GameStarted
+                        messageCreator.MessageCreatorGroup("Game Started",TheMindMessageModelHelper.GameStarted
                                 (g.getGameId(),g.getLifePoints(),g.getVotes(),g.getPlayers()),g.getSessionIds());
                     }
                 }
@@ -84,24 +141,13 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
     }
 
 
-    @Override
-    public void UpdateQueue(int numberOfPlayers,ArrayList<String> sessionIds) {
 
-        messageCreator.MessageCreatorAll("More players", TheMindMessageModelHelper.UpdateQueue(numberOfPlayers), sessionIds);
+    private void UpdateQueue(int numberOfPlayers,ArrayList<String> sessionIds) {
+
+        messageCreator.MessageCreatorGroup("More players", TheMindMessageModelHelper.UpdateQueue(numberOfPlayers), sessionIds);
     }
 
-    @Override
-    public void EndGameMessage(String sessionID, String winner) {
-
-    }
-
-    @Override
-    public void UpdateGame() {
-
-    }
-
-    @Override
-    public void RemoveGame(int gameId) {
+    private void RemoveGame(int gameId) {
 
         for (TheMindWebsocketGameLogic g : games) {
             if (gameId == g.getGameId()) {
@@ -111,39 +157,20 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
 
     }
 
-    @Override
-    public void RemovePlayer(String sessionid) {
-        for (TheMindWebsocketGameLogic g : games) {
-            g.removePlayer(sessionid);
-            if (g.getPlayers().size()==0){
-                games.remove(g);
-            }
-        }
-    }
 
-    @Override
-    public ITheMindWebsocketGameLogic getGame(int gameId) {
-
-        for (TheMindWebsocketGameLogic g : games) {
-            if (gameId == g.getGameId()) {
-                return g;
-            }
-        }
-        return null;
-    }
-
-    @Override
     public void UpdatePlayerScore(String playerId, int score, String sessionId) {
 
     }
 
-    @Override
+
     public void GetPlayerScore(String playerid, String sessionId) {
 
     }
 
-    @Override
+
     public void SetPlayerScore(String playerid, String sessionId) {
 
     }
+
+
 }

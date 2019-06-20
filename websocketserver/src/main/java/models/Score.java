@@ -1,21 +1,21 @@
 package models;
 
 public class Score {
-    String name;
-    int points;
+    String playerId;
+    int playerScore;
 
-    public Score(String name, int points) {
-        this.name = name;
-        this.points = points;
+    public Score(String name, int playerScore) {
+        this.playerId = name;
+        this.playerScore = playerScore;
 
     }
 
-    public String getName() {
-        return name;
+    public String getPlayerId() {
+        return playerId;
     }
 
-    public int getPoints() {
-        return points;
+    public int getPlayerScore() {
+        return playerScore;
     }
 
 }

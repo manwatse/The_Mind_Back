@@ -1,6 +1,6 @@
 package themindwebsocketmessageprocessor;
 
-import themindmessagehandlers.ReadyHandler;
+import themindmessagehandlers.*;
 import themindwebsocketlogic.ITheMindWebsocketLogic;
 import com.google.gson.Gson;
 import shared.EncapsulatingMessage;
@@ -17,7 +17,6 @@ public class TheMindWebsocketMessageProcessor implements  ITheMindWebsocketMessa
         EncapsulatingMessage messageObject = gson.fromJson(msg,EncapsulatingMessage.class);
         String messageType=messageObject.getMessage();
 
-        //todo add handlers
 
         switch (messageType) {
             default:
@@ -27,14 +26,23 @@ public class TheMindWebsocketMessageProcessor implements  ITheMindWebsocketMessa
                 ReadyHandler readyHandler = new ReadyHandler(logic);
                 readyHandler.PlayerReady(messageObject.getObject(),sessionId);
                 break;
-            case "UpdateGame":
+            case "MessageCardPlayed":
+                System.out.println("card played");
+                CardPlayedHandler cardPlayedHandler = new CardPlayedHandler(logic);
+                cardPlayedHandler.cardPlayed(messageObject.getObject(),sessionId);
+                break;
+            case "MessageGetScores":
+                ScoreHandler scoreHandler = new ScoreHandler(logic);
+                scoreHandler.getScores(messageObject.getObject(),sessionId);
 
                 break;
             case "Vote":
-
+                VoteGameHandler voteGameHandler = new VoteGameHandler(logic);
+                voteGameHandler.playerVote(messageObject.getObject(),sessionId);
                 break;
             case "emoji":
-
+                EmojiHandler emojiHandler= new EmojiHandler(logic);
+                emojiHandler.sendEmoji(messageObject.getObject(),sessionId);
                 break;
         }
     }

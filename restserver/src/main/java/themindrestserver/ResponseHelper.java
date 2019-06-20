@@ -1,12 +1,11 @@
 package themindrestserver;
 
 import com.google.gson.Gson;
-import dto.BaseResultDto;
-import dto.BoolResultDto;
-import dto.GetPlayerScoreDto;
-import dto.HighscoreResultDto;
 import models.PlayerScore;
+import shared.PlayerScoreDTO;
+import shared.PlayerScoreResponse;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ResponseHelper {
@@ -15,27 +14,45 @@ public class ResponseHelper {
 
     public  static  final Gson gson = new Gson();
 
-    public static String getErrorResponseString(){
-        BaseResultDto response = new BaseResultDto();
+    public static String getErrorResponse(){
+        PlayerScoreResponse response = new PlayerScoreResponse();
         response.setSuccess(false);
         return gson.toJson(response);
     }
 
-    public static String getBooleanResultDtoResponseString(boolean check) {
-        BoolResultDto response = new BoolResultDto(check);
+    public static String getSuccesReponse() {
+        PlayerScoreResponse response = new PlayerScoreResponse();
         response.setSuccess(true);
         return gson.toJson(response);
     }
 
-    public static String getHighscoresResultDtcString(List<PlayerScore> highscores) {
-        HighscoreResultDto response = new HighscoreResultDto(highscores);
+
+    public  static String getPLayerScoreResponse(PlayerScore playerScore){
+
+        PlayerScoreResponse response = new PlayerScoreResponse();
+        PlayerScoreDTO score = playerScore.createDTO();
+        response.getScores().add(score);
         response.setSuccess(true);
         return gson.toJson(response);
     }
-    public  static String getPLayerScoreResultDtoString(GetPlayerScoreDto getPlayerScoreDto){
-        GetPlayerScoreDto response = getPlayerScoreDto;
+
+    public static String getHighScoresResponse(List<PlayerScoreDTO> allScores) {
+
+        PlayerScoreResponse response = new PlayerScoreResponse();
+        response.setScores(allScores);
         response.setSuccess(true);
         return gson.toJson(response);
     }
+
+    public static  List<PlayerScoreDTO> getPlayerscoreDTOList(ArrayList<PlayerScore> allScoreFromFirecloud){
+
+        List<PlayerScoreDTO> playerScoreDTOS= new ArrayList<>();
+        for (PlayerScore p: allScoreFromFirecloud) {
+            PlayerScoreDTO score = p.createDTO();
+            playerScoreDTOS.add(score);
+        }
+        return playerScoreDTOS;
+    }
+
 
 }

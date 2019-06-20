@@ -1,19 +1,36 @@
 package models;
 
+import shared.PlayerScoreDTO;
+
 public class PlayerScore {
     private String PlayerId;
-    private int Highscore;
+    private int score;
 
-    public PlayerScore(String playerid,int Highscore){
+    public PlayerScore(String playerid,int score){
         this.PlayerId=playerid;
-        this.Highscore=Highscore;
+        this.score = score;
+    }
+
+    public PlayerScore() {
+    }
+
+    public void setPlayerId(String playerId) {
+        PlayerId = playerId;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 
     public String getPlayerId() {
         return PlayerId;
     }
 
-    public int getHighscore() {
-        return Highscore;
+    public int getScore() {
+        return score;
+    }
+
+    public PlayerScoreDTO createDTO () {
+        return new PlayerScoreDTO(PlayerId,score);
     }
 }

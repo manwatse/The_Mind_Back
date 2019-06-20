@@ -21,7 +21,13 @@ public class TheMindWebsocketMessageCreator implements  ITheMindWebsocketMessage
     }
 
     @Override
-    public void MessageCreatorAll(String action, String object, ArrayList<String> sessionIds) {
-        event.sendMessageToAll(gson.toJson(new EncapsulatingMessage(action, object)),sessionIds);
+    public void MessageCreatorGroup(String action, String object, ArrayList<String> sessionIds) {
+        event.sendMessageToSendGroup(gson.toJson(new EncapsulatingMessage(action, object)),sessionIds);
+    }
+
+    @Override
+    public void MessageCreatorAll(String action, String object) {
+        event.sendMessageToSendToAll(gson.toJson(new EncapsulatingMessage(action,object)));
+
     }
 }

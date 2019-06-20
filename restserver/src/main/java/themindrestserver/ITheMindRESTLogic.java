@@ -10,7 +10,7 @@ public interface ITheMindRESTLogic {
 
     boolean setPlayerScore(String playerId,int score);
 
-    int getPlayerScore(String playerid);
+    PlayerScore getPlayerScore(String playerid);
 
-    boolean createPlayerScore(String data);
+    PlayerScore createPlayerScore(String data);
 }

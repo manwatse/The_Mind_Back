@@ -19,7 +19,7 @@ public class TheMindRestHandler implements ITheMindRestHandler {
     public String getPlayerName(String userId) {
 //        GetPlayerRequestDto dto = new GetPlayerRequestDto(userId);
 //        GetPlayerResultDto result = executeQueryPost(dto, getQuery("/player/getPlayer/"), GetPlayerResultDto.class);
-//        return result.getName();
+//        return result.getPlayerId();
         return  null;
     }
     private String getQuery(String path) {

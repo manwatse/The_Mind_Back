@@ -16,5 +16,7 @@ public interface ITheMindEvent {
 
     void sendMessage(String message,String sessionId);
 
-    void sendMessageToAll(String message, ArrayList<String> sessionIds);
+    void sendMessageToSendGroup(String message, ArrayList<String> sessionIds);
+
+    void sendMessageToSendToAll(String message);
 }

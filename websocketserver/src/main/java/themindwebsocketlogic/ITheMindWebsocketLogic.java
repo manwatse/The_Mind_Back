@@ -11,27 +11,17 @@ public interface ITheMindWebsocketLogic {
 
     void PlayerReady(String id ,String sessionId);
 
-    void CreateGame(int gameId);
+    void vote(String playerId,int gameId);
 
-    void JoinGame(String userid, String sessionId);
-
-    void UpdateQueue(int numberOfPlayers, ArrayList<String> sessionIds);
-
-    void EndGameMessage(String sessionID, String winner);
-
-    void UpdateGame();
-
-    void RemoveGame(int gameId);
+    void playCard(String playerId, int playedCard,String sessionId);
 
     void RemovePlayer(String sessionid);
 
+    void emoji(String playerId,String emoji,String sessionId);
+
     ITheMindWebsocketGameLogic getGame(int gameId);
 
-    void UpdatePlayerScore(String playerid, int score, String sessionId);
-
-    void GetPlayerScore(String playerid,String sessionId);
-
-    void SetPlayerScore(String playerid,String sessionId);
+    public void GetScores(String sessionId);
 
 
 

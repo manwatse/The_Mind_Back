@@ -12,14 +12,22 @@ public class TheMindRESTLogic implements ITheMindRESTLogic {
     }
 
 
-    public ArrayList<PlayerScore> getHighscores() {
+    public PlayerScore createPlayerScore(String data) {
+
         try {
-            if (databaseConn.getHighscores()!=null){
-                return databaseConn.getHighscores();
-            }
-            else{
-                return null;
-            }
+
+            return databaseConn.createPlayerScore(data);
+        }
+        catch (Exception e){
+            System.out.println(e);
+            return null;
+        }
+    }
+
+    public PlayerScore getPlayerScore(String playerid) {
+        try {
+            return databaseConn.getPlayerScore(playerid);
+
         }
         catch (Exception e){
             System.out.println(e);
@@ -29,46 +37,21 @@ public class TheMindRESTLogic implements ITheMindRESTLogic {
 
     public boolean setPlayerScore(String playerId, int score) {
         try {
-            if(databaseConn.setPlayerScore(playerId,score)){
-                return true;
-            }else {
-                return false;
-            }
+           databaseConn.setPlayerScore(playerId,score);
+           return true;
         }catch (Exception e){
             System.out.println(e);
             return false;
         }
     }
 
-    public int getPlayerScore(String playerid) {
+    public ArrayList<PlayerScore> getHighscores() {
         try {
-            if (databaseConn.getPlayerScore(playerid)!= (-1)){
-                return databaseConn.getPlayerScore(playerid);
-            }
-            else{
-                return -1;
-            }
-
+            return databaseConn.getHighscores();
         }
         catch (Exception e){
             System.out.println(e);
-            return  -1;
-        }
-    }
-
-    public boolean createPlayerScore(String data) {
-
-        try {
-            if (databaseConn.createPlayerScore(data)){
-                return true;
-            }
-            else {
-                return false;
-            }
-        }
-        catch (Exception e){
-            System.out.println(e);
-            return false;
+            return  null;
         }
     }
 }

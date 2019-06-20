@@ -1,0 +1,7 @@
+Stubs\TheMindWebsocketGameLogicStub.class
+themindwebsocketgamelogic\TheMindWebsocketGameLogicTest.class
+Stubs\TheMindEventStub.class
+Stubs\TheMindWebsocketLogicStub.class
+themindwebsocketlogic\TheMindWebsocketLogicTest.class
+themindwebsocketmessageprocessor\TheMindWebsocketMessageProcessorTest.class
+themindwebsocketmessagecreator\TheMindWebsocketMessageCreatorTest.class

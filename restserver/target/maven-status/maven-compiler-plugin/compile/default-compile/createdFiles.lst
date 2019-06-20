@@ -1,0 +1,15 @@
+themindrestserver\TheMindFirebaseDB.class
+themindrestserver\TheMindFirebaseResponse.class
+dto\GetPlayerScoreDto.class
+dto\SetPlayerScoreDto.class
+themindrestserver\ResponseHelper.class
+models\PlayerScore.class
+themindrestserver\ITheMindRESTLogic.class
+dto\BaseResultDto.class
+dto\CreatePlayerScoreRequestDto.class
+themindrestserver\TheMindBackRESTService.class
+themindrestserver\TheMindRESTLogic.class
+dto\HighscoreResultDto.class
+dto\BoolResultDto.class
+themindrestserver\ITheMindRESTResponse.class
+themindrestserver\ITheMindFirebaseDB.class

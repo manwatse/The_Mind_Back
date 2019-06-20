@@ -51,6 +51,7 @@ public class TheMindEvent implements ITheMindEvent {
     }
 
     public void sendMessage(String message, String sessionID) {
+        System.out.println("Send to user");
         for (javax.websocket.Session session : sessions) {
             if (session.getId().equals(sessionID)) {
                 try {
@@ -63,10 +64,18 @@ public class TheMindEvent implements ITheMindEvent {
     }
 
     @Override
-    public void sendMessageToAll(String message, ArrayList<String> sessionIds) {
+    public void sendMessageToSendGroup(String message, ArrayList<String> sessionIds) {
         System.out.println("Send to group");
         for (String s: sessionIds) {
             sendMessage(message,s);
+        }
+    }
+
+    @Override
+    public void sendMessageToSendToAll(String message) {
+        for (Session s:sessions) {
+            sendMessage(message,s.getId());
+
         }
     }
 
