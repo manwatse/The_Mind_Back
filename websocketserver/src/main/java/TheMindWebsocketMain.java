@@ -4,18 +4,15 @@ import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.websocket.jsr356.server.ServerContainer;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
-import restapi.ITheMindRestHandler;
-import restapi.TheMindRestHandler;
 import themindwebsocketevent.ITheMindEvent;
 import themindwebsocketevent.TheMindEvent;
 import themindwebsocketlogic.ITheMindWebsocketLogic;
 import themindwebsocketlogic.TheMindWebsocketLogic;
 import themindwebsocketmessageprocessor.ITheMindWebsocketMessageProcessor;
 import themindwebsocketmessageprocessor.TheMindWebsocketMessageProcessor;
-
 import javax.websocket.server.ServerEndpoint;
 import javax.websocket.server.ServerEndpointConfig;
-import java.util.Collections;
+
 
 public class TheMindWebsocketMain  {
     private static final  int PORT = 8099;
@@ -23,8 +20,7 @@ public class TheMindWebsocketMain  {
     public static void main(String[] args) {
 
         //initiate all logic
-        ITheMindRestHandler restHandler= new TheMindRestHandler();
-        ITheMindWebsocketLogic logic = new TheMindWebsocketLogic(restHandler);
+        ITheMindWebsocketLogic logic = new TheMindWebsocketLogic();
         ITheMindWebsocketMessageProcessor processor= new TheMindWebsocketMessageProcessor(logic);
         final ITheMindEvent socket = new TheMindEvent(logic,processor);
 

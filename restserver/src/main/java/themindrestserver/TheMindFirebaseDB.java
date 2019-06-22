@@ -43,36 +43,64 @@ public class TheMindFirebaseDB implements ITheMindFirebaseDB {
 
     public PlayerScore createPlayerScore(String PlayerId) {
 
-        DocumentReference docRef = db.collection("PlayerScore").document(PlayerId);
-        Map<String, Object> data = new HashMap<>();
-        data.put("playerId", PlayerId);
-        data.put("score", 0);
+        if (checkIfPlayerExist(PlayerId)) {
+            return getPlayerScore(PlayerId);
+        } else {
+            DocumentReference docRef = db.collection("PlayerScore").document(PlayerId);
+            Map<String, Object> data = new HashMap<>();
+            data.put("playerId", PlayerId);
+            data.put("score", 0);
 
-        try {
-            ApiFuture<WriteResult> result = docRef.set(data);
-            System.out.println("Update time : " + result.get().getUpdateTime());
-        } catch (Exception e){
-            System.out.println(e);
+            try {
+                ApiFuture<WriteResult> result = docRef.set(data);
+                System.out.println("Update time : " + result.get().getUpdateTime());
+                return getPlayerScore(PlayerId);
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+            return null;
         }
-        return null;
+    }
 
+    @Override
+    public boolean checkIfPlayerExist(String playerId) {
+        System.out.println("checking user");
+        boolean exist = false;
+
+        DocumentReference docRef = db.collection("PlayerScore").document(playerId);
+        ApiFuture<DocumentSnapshot> future = docRef.get();
+        try {
+            DocumentSnapshot document = future.get();
+            if (document.exists()) {
+                exist = true;
+            } else {
+                exist = false;
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return exist;
     }
 
 
     public PlayerScore getPlayerScore(String playerid) {
+        DocumentReference docRef = db.collection("PlayerScore").document(playerid);
+        ApiFuture<DocumentSnapshot> future = docRef.get();
 
-        ApiFuture<QuerySnapshot> query = db.collection("PlayerScore").select("playerId",playerid).get();
+
 
         try {
-            QuerySnapshot querySnapshot = query.get();
-            List<QueryDocumentSnapshot> documents = querySnapshot.getDocuments();
-            for (QueryDocumentSnapshot document : documents) {
-                PlayerScore playerScore =document.toObject(PlayerScore.class);
-                System.out.println("Playerscore retrieved");
+            DocumentSnapshot document = future.get();
+            if (document.exists()){
+                PlayerScore playerScore = document.toObject(PlayerScore.class);
                 return playerScore;
             }
 
-        } catch (Exception e){
+
+
+        } catch (Exception e) {
             System.out.println(e);
         }
         return null;
@@ -89,12 +117,11 @@ public class TheMindFirebaseDB implements ITheMindFirebaseDB {
             ApiFuture<WriteResult> future = db.collection("PlayerScore").document(playerId).set(docData);
             System.out.println("Score updated");
             return true;
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
         }
         return false;
     }
-
 
 
     public ArrayList<PlayerScore> getHighscores() {
@@ -105,13 +132,16 @@ public class TheMindFirebaseDB implements ITheMindFirebaseDB {
             QuerySnapshot querySnapshot = query.get();
             List<QueryDocumentSnapshot> documents = querySnapshot.getDocuments();
             for (QueryDocumentSnapshot document : documents) {
-                PlayerScore playerScore =document.toObject(PlayerScore.class);
+                PlayerScore playerScore = document.toObject(PlayerScore.class);
                 list.add(playerScore);
                 System.out.println(document.getId());
-                return list;
-            }
 
-        } catch (Exception e){
+
+            }
+            System.out.println("Recieved all scores");
+            return list;
+
+        } catch (Exception e) {
             System.out.println(e);
         }
         return null;

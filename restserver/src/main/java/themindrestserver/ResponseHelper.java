@@ -30,11 +30,14 @@ public class ResponseHelper {
     public  static String getPLayerScoreResponse(PlayerScore playerScore){
 
         PlayerScoreResponse response = new PlayerScoreResponse();
+        ArrayList<PlayerScoreDTO> scores = new ArrayList<>();
         PlayerScoreDTO score = playerScore.createDTO();
-        response.getScores().add(score);
+        scores.add(score);
+        response.setScores(scores);
         response.setSuccess(true);
         return gson.toJson(response);
     }
+
 
     public static String getHighScoresResponse(List<PlayerScoreDTO> allScores) {
 

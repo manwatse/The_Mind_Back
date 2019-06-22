@@ -13,8 +13,9 @@ public class MessageUpdateGame {
     private int gameid;
     private int votes;
     private int lifepoints;
+    private boolean gameWon;
 
-    public MessageUpdateGame(ArrayList<Player> players, String actor, int lastPlayed, int level, int gameid, int votes, int lifepoints) {
+    public MessageUpdateGame(ArrayList<Player> players, String actor, int lastPlayed, int level, int gameid, int votes, int lifepoints, boolean gameWon) {
         this.players = players;
         this.actor = actor;
         this.lastPlayed = lastPlayed;
@@ -22,5 +23,6 @@ public class MessageUpdateGame {
         this.gameid = gameid;
         this.votes = votes;
         this.lifepoints = lifepoints;
+        this.gameWon = gameWon;
     }
 }

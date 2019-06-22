@@ -13,9 +13,7 @@ public class TheMindRESTLogic implements ITheMindRESTLogic {
 
 
     public PlayerScore createPlayerScore(String data) {
-
         try {
-
             return databaseConn.createPlayerScore(data);
         }
         catch (Exception e){
@@ -35,13 +33,13 @@ public class TheMindRESTLogic implements ITheMindRESTLogic {
         }
     }
 
-    public boolean setPlayerScore(String playerId, int score) {
+    public void setPlayerScore(String playerId, int score) {
         try {
-           databaseConn.setPlayerScore(playerId,score);
-           return true;
+            databaseConn.setPlayerScore(playerId,score);
+
         }catch (Exception e){
             System.out.println(e);
-            return false;
+
         }
     }
 

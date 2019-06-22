@@ -14,4 +14,6 @@ public interface ITheMindFirebaseDB {
 
     PlayerScore createPlayerScore(String PlayerId);
 
+    boolean checkIfPlayerExist(String playerId);
+
 }

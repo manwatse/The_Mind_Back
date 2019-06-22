@@ -2,23 +2,24 @@ package shared;
 
 public class PlayerScoreDTO {
 
-    private String Playerid;
+    private String playerId;
     private int score;
 
     public PlayerScoreDTO() {
     }
 
-    public PlayerScoreDTO(String playerid, int score) {
-        Playerid = playerid;
+    public PlayerScoreDTO(String playerId) {
+        this.playerId = playerId;
+    }
+
+
+    public PlayerScoreDTO(String playerId, int score) {
+        this.playerId = playerId;
         this.score = score;
     }
 
-    public PlayerScoreDTO(String playerid) {
-        Playerid = playerid;
-    }
-
     public String getName() {
-        return Playerid;
+        return playerId;
     }
 
     public int getScore() {

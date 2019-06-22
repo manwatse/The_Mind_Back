@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c8a1e89-a42f-4c2d-b0cf-b869c436a98e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/MessageUpdateGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/MessageCardPlayed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/MessageGetScores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/MessageSendEmoji.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/CardPlayedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/test/java/Stubs/TheMindEventStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/test/java/Stubs/TheMindWebsocketGameLogicStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/test/java/Stubs/TheMindWebsocketLogicStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/test/java/themindwebsocketgamelogic/TheMindWebsocketGameLogicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/test/java/themindwebsocketlogic/TheMindWebsocketLogicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/test/java/themindwebsocketmessagecreator/TheMindWebsocketMessageCreatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketserver/src/test/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restserver/src/main/java/restclient/TheMindRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restserver/src/main/java/restclient/TheMindRestClientMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restserver/src/test/java/intergrationTest/TheMindRestIntergrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restserver/src/test/java/intergrationTest/databaseStub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/src/main/java/dto/BaseResultDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/src/main/java/dto/BoolResultDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/src/main/java/dto/CreatePlayerScoreRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/src/main/java/dto/GetPlayerScoreDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/src/main/java/dto/HighscoreResultDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/src/main/java/dto/SetPlayerScoreDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/src/main/java/models/PlayerScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/src/main/java/models/PlayerScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindFirebaseDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindFirebaseDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindRESTLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindRESTLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindRESTResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindRESTResponse.java" afterDir="false" />
@@ -32,70 +17,32 @@
       <change beforePath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindRESTLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindRESTLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/src/main/resources/the-mindfront-869495d72690.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/target/classes/dto/BaseResultDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/target/classes/dto/BoolResultDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/target/classes/dto/CreatePlayerScoreRequestDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/target/classes/dto/GetPlayerScoreDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/target/classes/dto/HighscoreResultDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/target/classes/dto/SetPlayerScoreDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/target/classes/models/PlayerScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/classes/models/PlayerScore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/target/classes/the-mindfront-869495d72690.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restserver/target/classes/shared/PlayerScoreDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/classes/shared/PlayerScoreDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/ITheMindFirebaseDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/ITheMindFirebaseDB.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/ITheMindRESTLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/ITheMindRESTLogic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/ITheMindRESTResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/ITheMindRESTResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/ResponseHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/ResponseHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/TheMindBackRESTService.class" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/TheMindBackRESTService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/TheMindFirebaseDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/TheMindFirebaseDB.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/TheMindFirebaseResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/TheMindFirebaseResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/TheMindRESTLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/classes/themindrestserver/TheMindRESTLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restserver/target/restserver-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/restserver/target/restserver-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/UpdateGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/MessageScores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/CardPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/MessageSendVote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/shared/Vote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/models/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/models/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/models/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/restapi/TheMindRestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/restapi/TheMindRestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/shared/EmojiMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/shared/EmojiMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/EmojiHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/EmojiHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/UpdateGameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/ScoreHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/VoteGameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/VoteGameHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/TheMindWebsocketMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/TheMindWebsocketMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/MessageUpdateGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/MessageUpdateGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/restapi/ITheMindRestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/restapi/TheMindRestHandler.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagemodelhelper/TheMindMessageModelHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagemodelhelper/TheMindMessageModelHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/ITheMindEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/ITheMindEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/TheMindEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/TheMindEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/ITheMindWebsocketGameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/ITheMindWebsocketGameLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/ITheMindWebsocketLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/ITheMindWebsocketLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/TheMindWebsocketLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/TheMindWebsocketLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessagecreator/ITheMindWebsocketMessageCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessagecreator/ITheMindWebsocketMessageCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessagecreator/TheMindWebsocketMessageCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessagecreator/TheMindWebsocketMessageCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/TheMindWebsocketMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/TheMindWebsocketMain$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/TheMindWebsocketMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/TheMindWebsocketMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/messagesendingmodels/UpdateGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/messagesreceivingmodels/CardPlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/messagesreceivingmodels/Vote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/models/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/models/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/models/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/models/Score.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/shared/EmojiMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/shared/EmojiMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindmessagehandlers/EmojiHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/themindmessagehandlers/EmojiHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindmessagehandlers/UpdateGameHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindmessagehandlers/VoteGameHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/themindmessagehandlers/VoteGameHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/messagesendingmodels/MessageUpdateGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/messagesendingmodels/MessageUpdateGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/restapi/ITheMindRestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/restapi/TheMindRestHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindmessagemodelhelper/TheMindMessageModelHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/themindmessagemodelhelper/TheMindMessageModelHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketevent/ITheMindEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketevent/ITheMindEvent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketevent/TheMindEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketevent/TheMindEvent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketgamelogic/TheMindWebsocketGameLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketgamelogic/TheMindWebsocketGameLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketlogic/ITheMindWebsocketLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketlogic/ITheMindWebsocketLogic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketlogic/TheMindWebsocketLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketlogic/TheMindWebsocketLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketmessagecreator/ITheMindWebsocketMessageCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketmessagecreator/ITheMindWebsocketMessageCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketmessagecreator/TheMindWebsocketMessageCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketmessagecreator/TheMindWebsocketMessageCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/classes/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketserver/target/websocketserver-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/websocketserver-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketserver/target/test-classes/themindwebsocketgamelogic/TheMindWebsocketGameLogicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/websocketserver/target/test-classes/themindwebsocketgamelogic/TheMindWebsocketGameLogicTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -112,64 +59,66 @@
     <session id="-1966864736">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.30" value="3" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.34" value="2" />
           <entry key="project.open.time.35" value="3" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="31" />
+          <entry key="class" value="94" />
           <entry key="html" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="388" />
+          <entry key="java" value="438" />
           <entry key="json" value="2" />
           <entry key="ts" value="1" />
-          <entry key="xml" value="15" />
+          <entry key="xml" value="17" />
           <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="31" />
+          <entry key="CLASS" value="94" />
           <entry key="HTML" value="2" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="388" />
+          <entry key="JAVA" value="438" />
           <entry key="JSON" value="2" />
           <entry key="TypeScript" value="1" />
-          <entry key="XML" value="15" />
+          <entry key="XML" value="17" />
           <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="96" />
-          <entry key="java" value="15266" />
+          <entry key="java" value="17861" />
           <entry key="ts" value="1" />
-          <entry key="xml" value="233" />
+          <entry key="xml" value="235" />
           <entry key="yml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15266" />
+          <entry key="JAVA" value="17861" />
           <entry key="PLAIN_TEXT" value="96" />
           <entry key="TypeScript" value="1" />
-          <entry key="XML" value="233" />
+          <entry key="XML" value="235" />
           <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
@@ -182,129 +131,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="83" column="42" lean-forward="true" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
-              <folding>
-                <element signature="e#738#811#1" expanded="true" />
-                <element signature="e#764#810#0" expanded="true" />
-                <element signature="e#824#885#1" expanded="true" />
-                <element signature="e#828#1071#1" expanded="true" />
-                <element signature="e#1270#1300#0" expanded="true" />
-                <element signature="e#1315#1379#0" expanded="true" />
-                <element signature="e#1315#1379#0" expanded="true" />
-                <element signature="e#1482#1557#1" expanded="true" />
-                <element signature="e#1541#1584#1" expanded="true" />
-                <element signature="e#1592#1622#0" expanded="true" />
-                <element signature="e#1592#1622#0" expanded="true" />
-                <element signature="e#1592#1622#0" expanded="true" />
-                <element signature="e#1632#1652#0" expanded="true" />
-                <element signature="e#1632#1652#0" expanded="true" />
-                <element signature="e#1632#1652#0" expanded="true" />
-                <element signature="e#1695#1744#1" expanded="true" />
-                <element signature="e#1762#1809#0" expanded="true" />
-                <element signature="e#1782#1810#0" expanded="true" />
-                <element signature="e#1762#1809#0" expanded="true" />
-                <element signature="e#1988#2086#1" expanded="true" />
-                <element signature="e#2208#2250#1" expanded="true" />
-                <element signature="e#2220#2289#1" expanded="true" />
-                <element signature="e#2245#2485#0" expanded="true" />
-                <element signature="e#2245#2485#0" expanded="true" />
-                <element signature="e#2369#2448#1" expanded="true" />
-                <element signature="e#2604#2650#1" expanded="true" />
-                <element signature="e#2719#2752#0" expanded="true" />
-                <element signature="e#2719#2752#0" expanded="true" />
-                <element signature="e#2719#2752#0" expanded="true" />
-                <element signature="e#2762#2789#0" expanded="true" />
-                <element signature="e#2762#2789#0" expanded="true" />
-                <element signature="e#2762#2789#0" expanded="true" />
-                <element signature="e#2860#2944#1" expanded="true" />
-                <element signature="e#3359#3407#1" expanded="true" />
-                <element signature="e#3384#3401#0" expanded="true" />
-                <element signature="e#3410#3506#1" expanded="true" />
-                <element signature="e#3484#3526#1" expanded="true" />
-                <element signature="e#3539#3608#1" expanded="true" />
-                <element signature="e#3444#3709#0" expanded="true" />
-                <element signature="e#3444#3709#0" expanded="true" />
-                <element signature="e#3688#3750#1" expanded="true" />
-                <element signature="e#3590#3611#0" expanded="true" />
-                <element signature="e#3590#3611#0" expanded="true" />
-                <element signature="e#3853#3869#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restserver/src/main/java/models/PlayerScore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="27" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="21" selection-end-column="27" />
-              <folding>
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/cloud/google-cloud-firestore/1.7.0/google-cloud-firestore-1.7.0.jar!/com/google/cloud/firestore/DocumentReference.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindBackRESTService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-              <folding>
-                <element signature="e#347#381#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ResponseHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#382#427#1" expanded="true" />
-                <element signature="e#434#460#0" expanded="true" />
-                <element signature="e#434#460#0" expanded="true" />
-                <element signature="e#576#626#1" expanded="true" />
-                <element signature="e#792#849#1" expanded="true" />
-                <element signature="e#1407#1463#1" expanded="true" />
-                <element signature="e#1469#1613#0" expanded="true" />
-                <element signature="e#1469#1613#0" expanded="true" />
-                <element signature="e#1529#1566#1" expanded="true" />
-                <element signature="e#1576#1602#0" expanded="true" />
-                <element signature="e#1576#1602#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -312,15 +143,153 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="70" column="106" selection-start-line="70" selection-start-column="106" selection-end-line="70" selection-end-column="106" />
+            <state relative-caret-position="125">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
-                <element signature="e#1585#1661#1" expanded="true" />
-                <element signature="e#1628#1642#0" expanded="true" />
-                <element signature="e#1644#1659#0" expanded="true" />
-                <element signature="e#1716#1749#0" expanded="true" />
-                <element signature="e#2378#2434#1" expanded="true" />
-                <element signature="e#2408#2433#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/TheMindWebsocketLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setEventSockets#0;class#TheMindWebsocketLogic#0" />
+                <element signature="e#1989#2489#0" expanded="true" />
+                <element signature="e#1994#2021#0" expanded="true" />
+                <element signature="e#1989#2489#0" expanded="true" />
+                <element signature="method#getGame#0;class#TheMindWebsocketLogic#0" />
+                <element signature="method#CreateGame#0;class#TheMindWebsocketLogic#0" />
+                <element signature="method#RemoveGame#0;class#TheMindWebsocketLogic#0" />
+                <element signature="method#UpdatePlayerScore#0;class#TheMindWebsocketLogic#0" />
+                <element signature="method#GetPlayerScore#0;class#TheMindWebsocketLogic#0" />
+                <element signature="method#SetPlayerScore#0;class#TheMindWebsocketLogic#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/restserver/src/test/java/intergrationTest/TheMindRestIntergrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="80" column="62" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#867#894#0" expanded="true" />
+                <element signature="e#867#894#0" expanded="true" />
+                <element signature="e#957#988#0" expanded="true" />
+                <element signature="e#957#988#0" expanded="true" />
+                <element signature="e#881#960#1" expanded="true" />
+                <element signature="e#1086#1115#0" expanded="true" />
+                <element signature="e#1086#1115#0" expanded="true" />
+                <element signature="e#1169#1217#0" expanded="true" />
+                <element signature="e#1345#1423#0" expanded="true" />
+                <element signature="e#1345#1423#0" expanded="true" />
+                <element signature="e#1932#1995#1" expanded="true" />
+                <element signature="e#2085#2106#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restserver/src/main/java/restclient/TheMindRestClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restserver/src/test/java/intergrationTest/databaseStub.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#308#352#0" expanded="true" />
+                <element signature="e#308#352#0" expanded="true" />
+                <element signature="e#362#406#0" expanded="true" />
+                <element signature="e#362#406#0" expanded="true" />
+                <element signature="e#416#460#0" expanded="true" />
+                <element signature="e#416#460#0" expanded="true" />
+                <element signature="e#470#514#0" expanded="true" />
+                <element signature="e#470#514#0" expanded="true" />
+                <element signature="e#524#568#0" expanded="true" />
+                <element signature="e#524#568#0" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#748#755#1" expanded="true" />
+                <element signature="e#763#966#0" expanded="true" />
+                <element signature="e#763#966#0" expanded="true" />
+                <element signature="e#763#966#0" expanded="true" />
+                <element signature="e#818#835#0" expanded="true" />
+                <element signature="e#818#835#0" expanded="true" />
+                <element signature="e#798#829#0" expanded="true" />
+                <element signature="e#878#895#0" expanded="true" />
+                <element signature="e#878#895#0" expanded="true" />
+                <element signature="e#878#911#0" expanded="true" />
+                <element signature="e#878#911#0" expanded="true" />
+                <element signature="e#1076#1114#1" expanded="true" />
+                <element signature="e#1071#1079#1" expanded="true" />
+                <element signature="e#1123#1316#0" expanded="true" />
+                <element signature="e#1123#1316#0" expanded="true" />
+                <element signature="e#1123#1316#0" expanded="true" />
+                <element signature="e#1178#1195#0" expanded="true" />
+                <element signature="e#1178#1195#0" expanded="true" />
+                <element signature="e#1121#1152#0" expanded="true" />
+                <element signature="e#1244#1261#0" expanded="true" />
+                <element signature="e#1244#1261#0" expanded="true" />
+                <element signature="e#1428#1471#0" expanded="true" />
+                <element signature="e#1428#1471#0" expanded="true" />
+                <element signature="e#1488#1523#0" expanded="true" />
+                <element signature="e#1488#1523#0" expanded="true" />
+                <element signature="e#1601#1602#0" expanded="true" />
+                <element signature="e#1629#1630#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+              <folding>
+                <element signature="method#vote#0;class#TheMindWebsocketGameLogic#0" />
+                <element signature="method#removePlayer#0;class#TheMindWebsocketGameLogic#0" />
+                <element signature="method#getSessionIds#0;class#TheMindWebsocketGameLogic#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/MessageUpdateGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindBackRESTService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1770#1853#0" expanded="true" />
+                <element signature="e#1770#1853#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -329,26 +298,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindRESTLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindRESTLogic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="170">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -373,7 +328,6 @@
       <find>co</find>
       <find>cards</find>
       <find>ini</find>
-      <find>jett</find>
       <find>server</find>
       <find>re</find>
       <find>remo</find>
@@ -382,6 +336,10 @@
       <find>sonar</find>
       <find>gameid</find>
       <find>votes</find>
+      <find>contai</find>
+      <find>java</find>
+      <find>jett</find>
+      <find>servlet</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -390,21 +348,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/websocketserver/src/main/java/shared/Vote.java" />
-        <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/UpdateGameHandler.java" />
-        <option value="$PROJECT_DIR$/websocketserver/src/main/java/shared/EmojiMessage.java" />
-        <option value="$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/CardPlayed.java" />
-        <option value="$PROJECT_DIR$/websocketserver/src/test/java/themindwebsocketgamelogic/TheMindWebsocketGameLogicTest.java" />
-        <option value="$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/UpdateGame.java" />
-        <option value="$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/MessageSendEmoji.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/MessageSendVote.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessagecreator/ITheMindWebsocketMessageCreator.java" />
-        <option value="$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/MessageUpdateGame.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/models/PlayerScore.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/models/Score.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/MessageScores.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/ScoreHandler.ts" />
-        <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagemodelhelper/TheMindMessageModelHelper.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/VoteGameHandler.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/EmojiHandler.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/ITheMindWebsocketLogic.java" />
@@ -419,28 +368,37 @@
         <option value="$PROJECT_DIR$/websocketserver/src/test/java/Stubs/TheMindEventStub.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/test/java/Stubs/TheMindWebsocketGameLogicStub.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/test/java/themindwebsocketlogic/TheMindWebsocketLogicTest.java" />
-        <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/TheMindWebsocketLogic.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/ScoreHandler.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/MessageCardPlayed.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/CardPlayedHandler.java" />
         <option value="$PROJECT_DIR$/websocketserver/src/main/java/models/Player.java" />
-        <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java" />
         <option value="$PROJECT_DIR$/restserver/src/main/java/dto/PlayerScoreResponse.java" />
         <option value="$PROJECT_DIR$/restserver/src/main/java/dto/PlayerScoreDto.java" />
         <option value="$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreDto.java" />
+        <option value="$PROJECT_DIR$/websocketserver/pom.xml" />
+        <option value="$PROJECT_DIR$/restserver/src/main/java/models/PlayerScore.java" />
         <option value="$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreDTO.java" />
         <option value="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindRESTResponse.java" />
-        <option value="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindFirebaseDB.java" />
-        <option value="$PROJECT_DIR$/websocketserver/pom.xml" />
-        <option value="$PROJECT_DIR$/restserver/pom.xml" />
-        <option value="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseResponse.java" />
         <option value="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindRESTLogic.java" />
-        <option value="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindRESTLogic.java" />
-        <option value="$PROJECT_DIR$/restserver/src/main/java/models/PlayerScore.java" />
         <option value="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ResponseHelper.java" />
+        <option value="$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreResponse.java" />
+        <option value="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindFirebaseDB.java" />
+        <option value="$PROJECT_DIR$/websocketserver/src/main/java/TheMindWebsocketMain.java" />
+        <option value="$PROJECT_DIR$/restserver/pom.xml" />
+        <option value="$PROJECT_DIR$/restserver/src/main/java/restclient/TheMindRestClientMain.java" />
+        <option value="$PROJECT_DIR$/restserver/src/main/java/restclient/TheMindRestClient.java" />
         <option value="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindBackRESTService.java" />
         <option value="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseDB.java" />
+        <option value="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseResponse.java" />
+        <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/TheMindWebsocketLogic.java" />
+        <option value="$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/MessageUpdateGame.java" />
+        <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindmessagemodelhelper/TheMindMessageModelHelper.java" />
+        <option value="$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java" />
+        <option value="$PROJECT_DIR$/restserver/src/test/java/databaseStub.java" />
+        <option value="$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindRESTLogic.java" />
+        <option value="$PROJECT_DIR$/restserver/src/test/java/intergrationTest/databaseStub.java" />
+        <option value="$PROJECT_DIR$/restserver/src/test/java/intergrationTest/TheMindRestIntergrationTest.java" />
       </list>
     </option>
   </component>
@@ -451,10 +409,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -462,9 +420,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -505,24 +463,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
-              <item name="restserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
-              <item name="restserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="themindrestserver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -530,8 +470,24 @@
               <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
               <item name="restserver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
+              <item name="restserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
+              <item name="restserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="intergrationTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
@@ -566,7 +522,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="messagesendingmodels" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
@@ -575,7 +531,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="themindwebsocketevent" type="462c0819:PsiDirectoryNode" />
+              <item name="themindmessagemodelhelper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
@@ -592,57 +548,6 @@
               <item name="websocketserver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="themindwebsocketlogic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
-              <item name="websocketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="themindwebsocketmessagecreator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
-              <item name="websocketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="themindwebsocketmessageprocessor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
-              <item name="websocketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
-              <item name="websocketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
-              <item name="websocketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="themindwebsocketgamelogic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="The_Mind_Back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="The_Mind_Back" type="462c0819:PsiDirectoryNode" />
-              <item name="websocketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="themindwebsocketlogic" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -654,12 +559,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="t&#9;FILE&#9;file://D:/school/semester 3.v2/SE/The_Mind_Back/restserver/src/main/java/themindrestserver/ITheMindRESTResponse.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561042126787" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561213049661" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="D:/downloads/S3RESTSingleJar/S3RESTSingleJar" />
+    <property name="last_opened_file_path" value="D:/downloads/BookAppV2-master/BookAppV2-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -698,13 +604,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TheMindBackRESTService">
+  <component name="RunManager" selected="JUnit.TheMindRestIntergrationTest">
     <configuration name="TheMindBackRESTService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="themindrestserver.TheMindBackRESTService" />
       <module name="restserver" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="themindrestserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TheMindRestClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="restclient.TheMindRestClientMain" />
+      <module name="restserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="restclient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -727,32 +646,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TheMindWebsocketMessageCreatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="websocketserver" />
+    <configuration name="TheMindRestIntergrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restserver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="themindwebsocketmessagecreator.*" />
+          <option name="PATTERN" value="intergrationTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="themindwebsocketmessagecreator" />
-      <option name="MAIN_CLASS_NAME" value="themindwebsocketmessagecreator.TheMindWebsocketMessageCreatorTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TheMindWebsocketMessageCreatorTest.messageCreator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="websocketserver" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="themindwebsocketmessagecreator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="themindwebsocketmessagecreator" />
-      <option name="MAIN_CLASS_NAME" value="themindwebsocketmessagecreator.TheMindWebsocketMessageCreatorTest" />
-      <option name="METHOD_NAME" value="messageCreator" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="intergrationTest" />
+      <option name="MAIN_CLASS_NAME" value="intergrationTest.TheMindRestIntergrationTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -760,17 +663,17 @@
     <list>
       <item itemvalue="JUnit.All in websocketserver" />
       <item itemvalue="Application.TheMindWebsocketMain" />
-      <item itemvalue="JUnit.TheMindWebsocketMessageCreatorTest.messageCreator" />
-      <item itemvalue="JUnit.TheMindWebsocketMessageCreatorTest" />
       <item itemvalue="Application.TheMindBackRESTService" />
+      <item itemvalue="Application.TheMindRestClientMain" />
+      <item itemvalue="JUnit.TheMindRestIntergrationTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TheMindRestIntergrationTest" />
         <item itemvalue="Application.TheMindBackRESTService" />
         <item itemvalue="Application.TheMindWebsocketMain" />
+        <item itemvalue="Application.TheMindRestClientMain" />
         <item itemvalue="JUnit.All in websocketserver" />
-        <item itemvalue="JUnit.TheMindWebsocketMessageCreatorTest" />
-        <item itemvalue="JUnit.TheMindWebsocketMessageCreatorTest.messageCreator" />
       </list>
     </recent_temporary>
   </component>
@@ -808,44 +711,47 @@
       <workItem from="1560840124737" duration="10533000" />
       <workItem from="1560863467219" duration="3343000" />
       <workItem from="1560961387224" duration="599000" />
-      <workItem from="1561015108328" duration="13301000" />
+      <workItem from="1561015108328" duration="30739000" />
+      <workItem from="1561129881130" duration="11489000" />
+      <workItem from="1561193672001" duration="13721000" />
+      <workItem from="1561211214158" duration="1698000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TheMindWebsocketLogicTest - 2019.06.18 at 09h 08m 49s.xml">
-      <configuration name="TheMindWebsocketLogicTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TheMindWebsocketLogicTest - 2019.06.18 at 09h 09m 03s.xml">
-      <configuration name="TheMindWebsocketLogicTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_websocketserver - 2019.06.18 at 09h 09m 09s.xml">
-      <configuration name="All in websocketserver" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TheMindWebsocketMessageProcessorTest - 2019.06.18 at 09h 22m 33s.xml">
-      <configuration name="TheMindWebsocketMessageProcessorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TheMindWebsocketMessageProcessorTest - 2019.06.18 at 09h 22m 49s.xml">
-      <configuration name="TheMindWebsocketMessageProcessorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TheMindWebsocketMessageCreatorTest - 2019.06.18 at 09h 48m 27s.xml">
-      <configuration name="TheMindWebsocketMessageCreatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TheMindWebsocketMessageCreatorTest - 2019.06.18 at 09h 49m 47s.xml">
-      <configuration name="TheMindWebsocketMessageCreatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_websocketserver - 2019.06.18 at 09h 53m 57s.xml">
-      <configuration name="All in websocketserver" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_websocketserver - 2019.06.18 at 09h 54m 20s.xml">
-      <configuration name="All in websocketserver" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_websocketserver - 2019.06.18 at 10h 01m 56s.xml">
       <configuration name="All in websocketserver" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TheMindRestIntergrationTest - 2019.06.22 at 14h 55m 21s.xml">
+      <configuration name="TheMindRestIntergrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TheMindRestIntergrationTest - 2019.06.22 at 14h 57m 55s.xml">
+      <configuration name="TheMindRestIntergrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TheMindRestIntergrationTest - 2019.06.22 at 15h 01m 49s.xml">
+      <configuration name="TheMindRestIntergrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TheMindRestIntergrationTest - 2019.06.22 at 15h 18m 47s.xml">
+      <configuration name="TheMindRestIntergrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TheMindRestIntergrationTest - 2019.06.22 at 15h 19m 02s.xml">
+      <configuration name="TheMindRestIntergrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TheMindRestIntergrationTest - 2019.06.22 at 16h 13m 18s.xml">
+      <configuration name="TheMindRestIntergrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TheMindRestIntergrationTest - 2019.06.22 at 16h 14m 52s.xml">
+      <configuration name="TheMindRestIntergrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TheMindRestIntergrationTest - 2019.06.22 at 16h 16m 23s.xml">
+      <configuration name="TheMindRestIntergrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TheMindRestIntergrationTest - 2019.06.22 at 16h 16m 59s.xml">
+      <configuration name="TheMindRestIntergrationTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141605000" />
+    <option name="totallyTimeSpent" value="185951000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -860,7 +766,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26979867" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28053692" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -869,17 +775,17 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20992908" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3929078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39716312" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3716312" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32998565" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32821497" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.19432624" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32821497" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -950,6 +856,36 @@
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/restserver/src/main/java/restclient/TheMindRestClient.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseResponse.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseResponse.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ResponseHelper.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ResponseHelper.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -957,219 +893,325 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/ITheMindWebsocketLogic.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.7/jersey-common-2.7.jar!/org/glassfish/jersey/message/internal/OutboundMessageContext.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/ITheMindWebsocketGameLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="73" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/ITheMindEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/test/java/Stubs/TheMindWebsocketLogicStub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/test/java/themindwebsocketmessagecreator/TheMindWebsocketMessageCreatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/test/java/Stubs/TheMindEventStub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/test/java/Stubs/TheMindWebsocketGameLogicStub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/test/java/themindwebsocketlogic/TheMindWebsocketLogicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindmessagemodelhelper/TheMindMessageModelHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/test/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+        <state relative-caret-position="134">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessagecreator/TheMindWebsocketMessageCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="391">
           <caret line="29" column="87" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.2.3.v20140905/jetty-server-9.2.3.v20140905.jar!/org/eclipse/jetty/server/handler/HandlerWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/restapi/TheMindRestHandler.java" />
+    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/TheMindWebsocketMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-          <folding>
-            <element signature="e#1041#1099#1" expanded="true" />
-            <element signature="e#1108#1178#1" expanded="true" />
-            <element signature="e#1187#1276#1" expanded="true" />
-            <element signature="e#1285#1348#1" expanded="true" />
-            <element signature="e#1358#1387#0" expanded="true" />
-            <element signature="e#1358#1387#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketevent/TheMindEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        <state relative-caret-position="252">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1040#1104#0" expanded="true" />
-            <element signature="e#1040#1104#0" expanded="true" />
-            <element signature="e#1040#1104#0" expanded="true" />
-            <element signature="e#1040#1104#0" expanded="true" />
-            <element signature="e#2350#2358#0" expanded="true" />
-            <element signature="e#2511#2520#0" expanded="true" />
-            <element signature="e#2565#2574#0" expanded="true" />
+            <element signature="e#1108#1178#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/ITheMindWebsocketMessageProcessor.java">
+    <entry file="file://$PROJECT_DIR$/restserver/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        <state relative-caret-position="315">
+          <caret line="137" column="21" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessageprocessor/TheMindWebsocketMessageProcessor.java">
+    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/restclient/TheMindRestClientMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+        <state relative-caret-position="221">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/ScoreHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/com/google/gson/internal/ConstructorConstructor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/EmojiHandler.java">
+    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindRESTResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/ReadyHandler.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-io/9.4.19.v20190610/jetty-io-9.4.19.v20190610.jar!/org/eclipse/jetty/io/ChannelEndPoint.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="139">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/MessagePlayerJoinQueue.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-util/9.4.19.v20190610/jetty-util-9.4.19.v20190610.jar!/org/eclipse/jetty/util/thread/QueuedThreadPool.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="109">
+          <caret line="701" selection-start-line="701" selection-end-line="701" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/com/google/gson/stream/JsonReader.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.7/jersey-common-2.7.jar!/org/glassfish/jersey/internal/AbstractRuntimeDelegate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        <state relative-caret-position="126">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindmessagehandlers/CardPlayedHandler.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.7/jersey-server-2.7.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="89" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
+        <state relative-caret-position="153">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.7/jersey-server-2.7.jar!/org/glassfish/jersey/server/model/internal/JavaResourceMethodDispatcherProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.7/jersey-server-2.7.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.7/jersey-server-2.7.jar!/org/glassfish/jersey/server/model/ResourceMethodInvoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="217" selection-start-line="217" selection-end-line="217" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.7/jersey-common-2.7.jar!/org/glassfish/jersey/internal/Errors.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.7/jersey-common-2.7.jar!/org/glassfish/jersey/process/internal/RequestScope.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.7/jersey-server-2.7.jar!/org/glassfish/jersey/server/ServerRuntime.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.7/jersey-server-2.7.jar!/org/glassfish/jersey/server/ApplicationHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="628" selection-start-line="628" selection-end-line="628" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.7/jersey-container-servlet-core-2.7.jar!/org/glassfish/jersey/servlet/WebComponent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.7/jersey-container-servlet-core-2.7.jar!/org/glassfish/jersey/servlet/ServletContainer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-servlet/9.4.19.v20190610/jetty-servlet-9.4.19.v20190610.jar!/org/eclipse/jetty/servlet/ServletHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="628" selection-start-line="628" selection-end-line="628" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-servlets/9.4.19.v20190610/jetty-servlets-9.4.19.v20190610.jar!/org/eclipse/jetty/servlets/CrossOriginFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-servlet/9.4.19.v20190610/jetty-servlet-9.4.19.v20190610.jar!/org/eclipse/jetty/servlet/ServletHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="369" selection-start-line="369" selection-end-line="369" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.4.19.v20190610/jetty-server-9.4.19.v20190610.jar!/org/eclipse/jetty/server/session/SessionHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="882" selection-start-line="882" selection-end-line="882" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.4.19.v20190610/jetty-server-9.4.19.v20190610.jar!/org/eclipse/jetty/server/handler/ContextHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="905" selection-start-line="905" selection-end-line="905" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.4.19.v20190610/jetty-server-9.4.19.v20190610.jar!/org/eclipse/jetty/server/handler/ScopedHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.4.19.v20190610/jetty-server-9.4.19.v20190610.jar!/org/eclipse/jetty/server/handler/HandlerWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.4.19.v20190610/jetty-server-9.4.19.v20190610.jar!/org/eclipse/jetty/server/Server.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="403" selection-start-line="403" selection-end-line="403" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.4.19.v20190610/jetty-server-9.4.19.v20190610.jar!/org/eclipse/jetty/server/HttpChannel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="286" selection-start-line="286" selection-end-line="286" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.4.19.v20190610/jetty-server-9.4.19.v20190610.jar!/org/eclipse/jetty/server/HttpConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-io/9.4.19.v20190610/jetty-io-9.4.19.v20190610.jar!/org/eclipse/jetty/io/AbstractConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="226" selection-start-line="226" selection-end-line="226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-io/9.4.19.v20190610/jetty-io-9.4.19.v20190610.jar!/org/eclipse/jetty/io/FillInterest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ResponseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#784#841#1" expanded="true" />
+            <element signature="e#885#902#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindRESTLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindFirebaseDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketmessagecreator/ITheMindWebsocketMessageCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindmessagemodelhelper/TheMindMessageModelHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketgamelogic/TheMindWebsocketGameLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2023">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        <state relative-caret-position="986">
+          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
           <folding>
             <element signature="method#vote#0;class#TheMindWebsocketGameLogic#0" />
-            <element signature="method#removeLastCardFromPlayers#0;class#TheMindWebsocketGameLogic#0" />
             <element signature="method#removePlayer#0;class#TheMindWebsocketGameLogic#0" />
             <element signature="method#getSessionIds#0;class#TheMindWebsocketGameLogic#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/models/Player.java">
+    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/messagesendingmodels/MessageUpdateGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#990#991#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="442">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/themindwebsocketlogic/TheMindWebsocketLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="151">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#TheMindWebsocketLogic#0;class#TheMindWebsocketLogic#0" />
             <element signature="method#setEventSockets#0;class#TheMindWebsocketLogic#0" />
+            <element signature="e#1989#2489#0" expanded="true" />
+            <element signature="e#1994#2021#0" expanded="true" />
+            <element signature="e#1989#2489#0" expanded="true" />
             <element signature="method#getGame#0;class#TheMindWebsocketLogic#0" />
             <element signature="method#CreateGame#0;class#TheMindWebsocketLogic#0" />
             <element signature="method#RemoveGame#0;class#TheMindWebsocketLogic#0" />
@@ -1180,264 +1222,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/com/google/gson/Gson.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7854">
-          <caret line="513" selection-start-line="513" selection-end-line="513" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/com/google/gson/reflect/TypeToken.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3162">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
-          <folding>
-            <element signature="e#6973#6974#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/com/google/gson/internal/$Gson$Preconditions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/main/java/messagesreceivingmodels/MessageCardPlayed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/src/test/java/themindwebsocketgamelogic/TheMindWebsocketGameLogicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindRESTResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindFirebaseDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/resources/the-mindfront-869495d72690.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="61" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocketserver/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="137" column="21" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="146" column="21" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/dto/HighscoreResultDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/dto/CreatePlayerScoreRequestDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/dto/SetPlayerScoreDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/dto/BaseResultDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/dto/BoolResultDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ITheMindRESTLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindRESTLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/cloud/google-cloud-firestore/1.7.0/google-cloud-firestore-1.7.0.jar!/com/google/cloud/firestore/DocumentReference.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/shared/PlayerScoreDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/models/PlayerScore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="70" column="106" selection-start-line="70" selection-start-column="106" selection-end-line="70" selection-end-column="106" />
-          <folding>
-            <element signature="e#1585#1661#1" expanded="true" />
-            <element signature="e#1628#1642#0" expanded="true" />
-            <element signature="e#1644#1659#0" expanded="true" />
-            <element signature="e#1716#1749#0" expanded="true" />
-            <element signature="e#2378#2434#1" expanded="true" />
-            <element signature="e#2408#2433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/ResponseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="125">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#382#427#1" expanded="true" />
-            <element signature="e#434#460#0" expanded="true" />
-            <element signature="e#434#460#0" expanded="true" />
-            <element signature="e#576#626#1" expanded="true" />
-            <element signature="e#792#849#1" expanded="true" />
-            <element signature="e#1407#1463#1" expanded="true" />
-            <element signature="e#1469#1613#0" expanded="true" />
-            <element signature="e#1469#1613#0" expanded="true" />
-            <element signature="e#1529#1566#1" expanded="true" />
-            <element signature="e#1576#1602#0" expanded="true" />
-            <element signature="e#1576#1602#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindBackRESTService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="241">
+          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
           <folding>
-            <element signature="e#347#381#1" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1770#1853#0" expanded="true" />
+            <element signature="e#1770#1853#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindFirebaseDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="83" column="42" lean-forward="true" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
+        <state relative-caret-position="119">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/themindrestserver/TheMindRESTLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
-            <element signature="e#738#811#1" expanded="true" />
-            <element signature="e#764#810#0" expanded="true" />
-            <element signature="e#824#885#1" expanded="true" />
-            <element signature="e#828#1071#1" expanded="true" />
-            <element signature="e#1270#1300#0" expanded="true" />
-            <element signature="e#1315#1379#0" expanded="true" />
-            <element signature="e#1315#1379#0" expanded="true" />
-            <element signature="e#1482#1557#1" expanded="true" />
-            <element signature="e#1541#1584#1" expanded="true" />
-            <element signature="e#1592#1622#0" expanded="true" />
-            <element signature="e#1592#1622#0" expanded="true" />
-            <element signature="e#1592#1622#0" expanded="true" />
-            <element signature="e#1632#1652#0" expanded="true" />
-            <element signature="e#1632#1652#0" expanded="true" />
-            <element signature="e#1632#1652#0" expanded="true" />
-            <element signature="e#1695#1744#1" expanded="true" />
-            <element signature="e#1762#1809#0" expanded="true" />
-            <element signature="e#1782#1810#0" expanded="true" />
-            <element signature="e#1762#1809#0" expanded="true" />
-            <element signature="e#1988#2086#1" expanded="true" />
-            <element signature="e#2208#2250#1" expanded="true" />
-            <element signature="e#2220#2289#1" expanded="true" />
-            <element signature="e#2245#2485#0" expanded="true" />
-            <element signature="e#2245#2485#0" expanded="true" />
-            <element signature="e#2369#2448#1" expanded="true" />
-            <element signature="e#2604#2650#1" expanded="true" />
-            <element signature="e#2719#2752#0" expanded="true" />
-            <element signature="e#2719#2752#0" expanded="true" />
-            <element signature="e#2719#2752#0" expanded="true" />
-            <element signature="e#2762#2789#0" expanded="true" />
-            <element signature="e#2762#2789#0" expanded="true" />
-            <element signature="e#2762#2789#0" expanded="true" />
-            <element signature="e#2860#2944#1" expanded="true" />
-            <element signature="e#3359#3407#1" expanded="true" />
-            <element signature="e#3384#3401#0" expanded="true" />
-            <element signature="e#3410#3506#1" expanded="true" />
-            <element signature="e#3484#3526#1" expanded="true" />
-            <element signature="e#3539#3608#1" expanded="true" />
-            <element signature="e#3444#3709#0" expanded="true" />
-            <element signature="e#3444#3709#0" expanded="true" />
-            <element signature="e#3688#3750#1" expanded="true" />
-            <element signature="e#3590#3611#0" expanded="true" />
-            <element signature="e#3590#3611#0" expanded="true" />
-            <element signature="e#3853#3869#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restserver/src/main/java/restclient/TheMindRestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restserver/src/test/java/intergrationTest/databaseStub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#308#352#0" expanded="true" />
+            <element signature="e#308#352#0" expanded="true" />
+            <element signature="e#362#406#0" expanded="true" />
+            <element signature="e#362#406#0" expanded="true" />
+            <element signature="e#416#460#0" expanded="true" />
+            <element signature="e#416#460#0" expanded="true" />
+            <element signature="e#470#514#0" expanded="true" />
+            <element signature="e#470#514#0" expanded="true" />
+            <element signature="e#524#568#0" expanded="true" />
+            <element signature="e#524#568#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#748#755#1" expanded="true" />
+            <element signature="e#763#966#0" expanded="true" />
+            <element signature="e#763#966#0" expanded="true" />
+            <element signature="e#763#966#0" expanded="true" />
+            <element signature="e#818#835#0" expanded="true" />
+            <element signature="e#818#835#0" expanded="true" />
+            <element signature="e#798#829#0" expanded="true" />
+            <element signature="e#878#895#0" expanded="true" />
+            <element signature="e#878#895#0" expanded="true" />
+            <element signature="e#878#911#0" expanded="true" />
+            <element signature="e#878#911#0" expanded="true" />
+            <element signature="e#1076#1114#1" expanded="true" />
+            <element signature="e#1071#1079#1" expanded="true" />
+            <element signature="e#1123#1316#0" expanded="true" />
+            <element signature="e#1123#1316#0" expanded="true" />
+            <element signature="e#1123#1316#0" expanded="true" />
+            <element signature="e#1178#1195#0" expanded="true" />
+            <element signature="e#1178#1195#0" expanded="true" />
+            <element signature="e#1121#1152#0" expanded="true" />
+            <element signature="e#1244#1261#0" expanded="true" />
+            <element signature="e#1244#1261#0" expanded="true" />
+            <element signature="e#1428#1471#0" expanded="true" />
+            <element signature="e#1428#1471#0" expanded="true" />
+            <element signature="e#1488#1523#0" expanded="true" />
+            <element signature="e#1488#1523#0" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
+            <element signature="e#1629#1630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restserver/src/test/java/intergrationTest/TheMindRestIntergrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="80" column="62" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#867#894#0" expanded="true" />
+            <element signature="e#867#894#0" expanded="true" />
+            <element signature="e#957#988#0" expanded="true" />
+            <element signature="e#957#988#0" expanded="true" />
+            <element signature="e#881#960#1" expanded="true" />
+            <element signature="e#1086#1115#0" expanded="true" />
+            <element signature="e#1086#1115#0" expanded="true" />
+            <element signature="e#1169#1217#0" expanded="true" />
+            <element signature="e#1345#1423#0" expanded="true" />
+            <element signature="e#1345#1423#0" expanded="true" />
+            <element signature="e#1932#1995#1" expanded="true" />
+            <element signature="e#2085#2106#0" expanded="true" />
           </folding>
         </state>
       </provider>

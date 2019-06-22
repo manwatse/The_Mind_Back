@@ -8,10 +8,10 @@ public interface ITheMindRESTResponse {
 
     Response getPlayerScore(String data);
 
-    Response setPlayerScore(PlayerScoreDTO data);
+    Response setPlayerScore(String data);
 
     Response getHighscores();
 
-    Response createPlayerScore(PlayerScoreDTO data);
+    Response createPlayerScore(String data);
 
 }

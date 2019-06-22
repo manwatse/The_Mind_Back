@@ -17,8 +17,10 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic {
     private int gameId;
     private int level;
     private int lastPlayedCard;
-    private Boolean gameStarted = false;
+    private boolean gameStarted = false;
     private ArrayList<String> sessionIds = new ArrayList<String>();
+    private boolean gameWon = false;
+    private boolean lost=false;
 
     public TheMindWebsocketGameLogic(int gameId) {
 
@@ -82,13 +84,13 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic {
     @Override
     public void endGame() {
         if (lifePoints == 0) {
-            //todo message gameover + remove game session
+            this.lost=true;
         } else if (level == 26 && players.size() == 4) {
-            //todo message victory + remove game session
+            this.gameWon=true;
         } else if (level == 34 && players.size() == 3) {
-            //todo message victory + remove game session
+            this.gameWon=true;
         } else if (level == 51 && players.size() == 2) {
-            //todo message victory + remove game session
+            this.gameWon=true;
         }
 
     }
@@ -105,6 +107,7 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic {
                 if (card >p.getCards().get(i)) {
                     lifePoints--;
                     endGame();
+                    //todo update message
                     System.out.println("lost life");
 
                     p.removeCard(i);
@@ -145,9 +148,6 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic {
                 empty= false;
             }
         }
-        for (Player p : players) {
-
-        }
         return empty;
     }
 
@@ -165,7 +165,6 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic {
 
         for (Player p : players) {
             p.getLastCard();
-            //todo send message vote succesfull
             p.removeLastCard();
         }
 
@@ -234,5 +233,9 @@ public class TheMindWebsocketGameLogic implements ITheMindWebsocketGameLogic {
             return false;
         }
 
+    }
+
+    public boolean isGameWon() {
+        return gameWon;
     }
 }

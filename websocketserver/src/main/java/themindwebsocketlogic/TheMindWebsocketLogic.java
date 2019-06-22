@@ -9,7 +9,7 @@ import themindwebsocketevent.ITheMindEvent;
 import themindwebsocketgamelogic.ITheMindWebsocketGameLogic;
 import themindwebsocketgamelogic.TheMindWebsocketGameLogic;
 import themindwebsocketmessageprocessor.ITheMindWebsocketMessageProcessor;
-import restapi.ITheMindRestHandler;
+
 
 import java.util.ArrayList;
 
@@ -17,15 +17,15 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
 
     int gameId;
     int numberOfPlayers;
-    ITheMindRestHandler rest;
+
     ITheMindWebsocketMessageCreator messageCreator;
     ITheMindEvent event;
     ITheMindWebsocketMessageProcessor messageProcessor;
     ArrayList<TheMindWebsocketGameLogic> games= new ArrayList<TheMindWebsocketGameLogic>();
     ArrayList<Score> scores= new ArrayList<>();
 
-    public TheMindWebsocketLogic(ITheMindRestHandler rest) {
-        this.rest = rest;
+    public TheMindWebsocketLogic() {
+
         gameId = 0;
         scores.add(new Score("Mzn08P68YyT4ecysSjWg1sgBVcP2",0));
         scores.add(new Score("PM3ZVK5wPafXyZAoPBxOuhupJXa2",0));
@@ -66,7 +66,7 @@ public class TheMindWebsocketLogic implements ITheMindWebsocketLogic {
             if (g.searchForPlayer(sessionId)){
                 g.Cardplayed(playedCard);
                 messageCreator.MessageCreatorGroup("UpdateGame",TheMindMessageModelHelper.updateGame
-                        (g.getPlayers(),playerId,g.getLastPlayedCard(),g.getLevel(),g.getGameId(),g.getVotes(),g.getLifePoints()),g.getSessionIds());
+                        (g.getPlayers(),playerId,g.getLastPlayedCard(),g.getLevel(),g.getGameId(),g.getVotes(),g.getLifePoints(),g.isGameWon()),g.getSessionIds());
                 System.out.println("last played card "+ g.getLastPlayedCard() );
             }
         }

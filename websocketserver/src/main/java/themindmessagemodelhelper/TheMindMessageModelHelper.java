@@ -11,8 +11,8 @@ public class TheMindMessageModelHelper {
     private static final Gson gson = new Gson();
 
 
-    public static String updateGame(ArrayList<Player> players, String actor, int lastPlayed, int level, int gameid, int votes,int lifepoints) {
-        MessageUpdateGame response = new MessageUpdateGame(players,actor,lastPlayed,level,gameid,votes,lifepoints);
+    public static String updateGame(ArrayList<Player> players, String actor, int lastPlayed, int level, int gameid, int votes,int lifepoints,boolean gameWon) {
+        MessageUpdateGame response = new MessageUpdateGame(players,actor,lastPlayed,level,gameid,votes,lifepoints,gameWon);
         return gson.toJson(response);
     }
 

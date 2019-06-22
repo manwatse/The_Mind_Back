@@ -8,7 +8,7 @@ public interface ITheMindRESTLogic {
 
     ArrayList<PlayerScore> getHighscores();
 
-    boolean setPlayerScore(String playerId,int score);
+    void setPlayerScore(String playerId,int score);
 
     PlayerScore getPlayerScore(String playerid);
 
