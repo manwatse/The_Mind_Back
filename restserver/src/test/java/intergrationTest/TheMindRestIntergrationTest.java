@@ -68,23 +68,20 @@ public class TheMindRestIntergrationTest {
         //add player
         PlayerScoreDTO createTest = restClient.createPlayer("test1",0);
         Assert.assertEquals("test1",createTest.getName());
-        Assert.assertEquals(1,createTest.getScore());
-
+        Assert.assertEquals(0,createTest.getScore());
 
         //get player
         PlayerScoreDTO getTest = restClient.getPlayer("test1");
         Assert.assertEquals("test1",getTest.getName());
-        Assert.assertEquals(1,getTest.getScore());
-
+        Assert.assertEquals(0,getTest.getScore());
 
         //set player score
         boolean setTest = restClient.setPlayerScore("test1",0);
         Assert.assertEquals(true,setTest);
 
-
         //get all players
         List<PlayerScoreDTO>  getAllTest = restClient.getAllScores();
-        Assert.assertEquals(5,getAllTest.size());
+        Assert.assertEquals(6,getAllTest.size());
 
     }
 
